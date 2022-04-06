@@ -1,0 +1,42 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "concurrently npm:build npm:start:express",
+    "start:dev": "concurrently npm:start:parcel npm:start:express",
+    "start:express": "node src/server/server.js",
+    "start:parcel": "parcel src/shared/html/index.html",
+    "build": "parcel build src/shared/html/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MSkauen/Portfolio.git"
+  },
+  "author": "Mathias Skauen Harestad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MSkauen/Portfolio/issues"
+  },
+  "homepage": "https://github.com/MSkauen/Portfolio#readme",
+  "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.6.0",
+    "@mui/material": "^5.6.0",
+    "@mui/styles": "^5.6.0",
+    "concurrently": "^7.0.0",
+    "express": "^4.17.3",
+    "parcel": "^2.4.1",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "react-router-dom": "^6.3.0",
+    "react-scroll": "^1.8.6",
+    "react-tsparticles": "^1.43.1",
+    "tsparticles-engine": "^2.0.0-beta.0",
+    "tsparticles-preset-links": "^1.43.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
