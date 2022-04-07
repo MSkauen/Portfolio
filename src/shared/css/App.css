@@ -23,6 +23,8 @@ h3 {
     font-size: 1.3em;
 }
 #tsparticles {
+    pointer-events: none;
+    -webkit-user-select: none;
     height: 300%;
     position: absolute;
     top: 0;
@@ -95,7 +97,7 @@ h3 {
     box-shadow: 0px 6px 18px 3px rgba(0,0,0,0.12);
     transition: 0.16s ease-in-out;
 
-    background-color: #141414cc;
+    background: rgba(92, 82, 127, 0.3);
     backdrop-filter: blur( 20px );
     -webkit-backdrop-filter: blur( 20px );
     border-radius: 10px;
@@ -178,6 +180,11 @@ height: auto;
 @media (max-width: 960px) {
     h2 {
         margin: 2em 0.3em;
+    }
+    #toolbar svg {
+        width: 1.5em;
+        height: 1.5em;
+        color: #ffffff;
     }
     .hero-card h1 {
         letter-spacing: normal;
