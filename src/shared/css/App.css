@@ -2,3 +2,46 @@
     margin: 0;
     padding: 0;
 }
+#tsparticles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 0; /* if you use -1 you have to set to `"window"` the interactivity.detectsOn property */
+}
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(22 22 22);
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+    display: flex;
+    position: absolute;
+    top: 750px;
+}
+.hero-card {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    background-color: #1f1f1f;
+    border-radius: 25px;
+    top: -5em;
+}
+.particle-wrapper {
+    z-index: -10;
+}
+@font-face {
+    font-family: 'Space Mono';
+    src:  local('Space Mono'), url(fonts/SpaceMono-Regular.ttf) format('ttf'),
+    local('Space Mono'), url(fonts/SpaceMono-Regular.woff) format('woff');
+}
+@font-face {
+    font-family: 'Space Mono Bold';
+    src:  local('Space Mono'), url(fonts/SpaceMono-Bold.ttf) format('ttf'),
+    local('Space Mono'), url(fonts/SpaceMono-Bold.woff) format('woff');
+}

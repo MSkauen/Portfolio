@@ -5,13 +5,14 @@ import React from "react";
 export default function ParticlesContainer () {
 
     return (
-        <div>
-            <Particles
+        <div className="particle-wrapper">
+            <Particles id="tsparticles"
             options={{
                 background: {
                     color: "#000"
             },
                 fpsLimit: 60,
+                fullScreen: { enable: false },
                 interactivity: {
                     detectsOn: "canvas",
                     events: {
