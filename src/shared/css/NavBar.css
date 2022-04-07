@@ -38,10 +38,8 @@ ul {
     float: left;
 }
 .nav-item:hover {
-    transform: translateY(0.25em);
     cursor: pointer;
     color: #bebebe;
-    text-decoration: underline;
 }
 
 @media (max-width: 960px) {

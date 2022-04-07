@@ -18,7 +18,7 @@ export default function Landing () {
             <div className="text-zone">
                 <h1>
                 <FadeInSection type={"fade-in-3"}>
-                    Hi,
+                    Hello,
                 </FadeInSection>
                 <FadeInSection type={"fade-in-2"}>
                     I'm <span className="name">Mathias</span>
