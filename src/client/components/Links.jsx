@@ -33,6 +33,7 @@ export default function ParticlesContainer () {
                         repulse: {
                             distance: 50,
                             duration: 1.4,
+                            speed: 0.01,
                         },
                     },
                 },

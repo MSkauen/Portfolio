@@ -10,7 +10,12 @@ export default function Landing () {
         <NavBar/>
         <div className="hero">
             <div className="hero-card">
-
+                <h1>Projects</h1>
+                <div className="projects">
+                    <div className="card"></div>
+                    <div className="card"></div>
+                    <div className="card"></div>
+                </div>
             </div>
         </div>
     </div>
