@@ -54,8 +54,10 @@ h3 {
 .call-to-action {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
     column-gap: 1em;
+    padding: 0 1em 0 1em;
 }
 .hero {
     width: 100%;
@@ -203,6 +205,13 @@ height: auto;
         height: 100%;
     }
 }
+@media (max-width: 960px) and (orientation:landscape) {
+    .text-zone {
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;    }
+}
+
 @font-face {
 font-family: 'Space Mono';
 src:  local('Space Mono'), url(fonts/SpaceMono-Regular.ttf) format('ttf'),

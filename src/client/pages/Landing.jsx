@@ -27,20 +27,21 @@ export default function Landing () {
                     I create web solutions
                 </FadeInSection>
                 </h1>
+                <div>
+                    <h2>Frontend / Backend Developer</h2>
+                    <div className="row call-to-action">
 
-                <h2>Frontend / Backend Developer</h2>
-                <div className="row call-to-action">
+                        <a href="https://github.com/MSkauen">
+                            <button className="btn">
+                                <img className="logo" src={githubLogo}/>
+                                <img className="mark" src={githubMark}/>
+                            </button>
+                        </a>
 
-                    <a href="https://github.com/MSkauen">
                         <button className="btn">
-                            <img className="logo" src={githubLogo}/>
-                            <img className="mark" src={githubMark}/>
+                            <h3>CONTACT ME</h3>
                         </button>
-                    </a>
-
-                    <button className="btn">
-                        <h3>CONTACT ME</h3>
-                    </button>
+                    </div>
                 </div>
 
             </div>
