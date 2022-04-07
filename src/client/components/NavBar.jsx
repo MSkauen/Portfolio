@@ -71,7 +71,7 @@ function Navbar() {
                             <li className="nav-item">
                                 <Link
                                     activeClass=""
-                                    to="projects"
+                                    to="project-innerRef"
                                     spy={true}
                                     smooth={true}
                                     offset={0}

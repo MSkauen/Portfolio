@@ -1,0 +1,23 @@
+.fade-in-3 {
+    transition: opacity 1.9s ease-in-out, transform 0.89s ease-out;
+}
+.fade-in-2 {
+    transition: opacity 1.9s 0.1s ease-in-out, transform 0.89s 0.1s ease-out;
+}
+.fade-in {
+    transition: opacity 1.9s 0.3s ease-in-out, transform 0.89s 0.3s  ease-out;
+}
+.fade-in, .fade-in-2, .fade-in-3 {
+    transform-origin: 10px;
+    opacity: 0;
+    transform: rotate3d(1,0,0,-90deg);
+    visibility: hidden;
+    will-change: opacity, visibility;
+}
+.fade-in.is-visible,
+.fade-in-2.is-visible,
+.fade-in-3.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+}

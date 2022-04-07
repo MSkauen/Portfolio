@@ -1,5 +1,4 @@
 import Particles from "react-tsparticles";
-import { loadLinksPreset } from "tsparticles-preset-links";
 import React from "react";
 
 export default function ParticlesContainer () {
@@ -9,32 +8,49 @@ export default function ParticlesContainer () {
             <Particles id="tsparticles"
             options={{
                 background: {
-                    color: "#000"
+                    color: "#261C2C"
             },
                 fpsLimit: 60,
                 fullScreen: { enable: false },
                 interactivity: {
                     detectsOn: "canvas",
                     events: {
-                        onClick: {
-                            enable: true,
-                            mode: "push",
-                        },
                         onHover: {
                             enable: true,
                             mode: "repulse",
                         },
+                        onClick: {
+                            enable: true,
+                            mode: "bubble"
+                        },
                         resize: true,
                     },
                     modes: {
-                        push: {
-                            quantity: 4,
+                        grab: {
+                            distance: 70,
+                            links: {
+                                enable: true,
+                                distance: 120,
+                                color: "#fff",
+                                opacity: 0.2,
+                                width: 1
+                            },
                         },
                         repulse: {
-                            distance: 50,
-                            duration: 1.4,
-                            speed: 0.01,
+                            distance: 100,
+                            speed: 7,
+                            maxSpeed: 40,
+                            duration: 10,
+                            factor: 0.1,
                         },
+                        bubble: {
+                            color: "#fff",
+                            mix: true,
+                            distance: 140,
+                            duration: 1,
+                            opacity: 0.10,
+                            size: 3,
+                        }
                     },
                 },
                 particles: {
