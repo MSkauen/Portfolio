@@ -158,7 +158,7 @@ h3 {
     cursor: pointer;
     background-color: #3e2c4196;
 }
-.btn:hover > .logo, .btn:hover > .mark, .btn:hover > h3, .btn:hover > svg {
+.btn:hover > .logo, .btn:hover > .mark {
     -webkit-animation-name: none;
     filter: none;
 }
@@ -170,7 +170,7 @@ height: auto;
 width: 20%;
 height: auto;
 }
-.logo, .mark, h3, svg {
+.logo, .mark {
     animation: flicker 2s ease infinite;
     transition: 0.1s ease-in-out;
     filter: drop-shadow(0px 0px 5px rgb(110, 133, 178));
