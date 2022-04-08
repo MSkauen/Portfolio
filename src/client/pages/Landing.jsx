@@ -39,7 +39,7 @@ export default function Landing () {
                         </a>
 
                         <button className="btn">
-                            <h3>CONTACT ME</h3>
+                            <SendRoundedIcon height="50%"/>
                         </button>
                     </div>
                 </div>
@@ -57,5 +57,29 @@ export default function Landing () {
                 </div>
             </div>
         </div>
+        <div className="hero">
+
+        </div>
+        <div className="hero">
+            <div className="hero-card">
+                <div className="project-innerRef"></div>
+                <h1>Contact Me</h1>
+                    <form action="mailto:info@w3docs.com" method="get" encType="text/plain">
+                        <div>
+                                <input type="text" name="name" id="name" placeholder="Name"/>
+                        </div>
+                        <div>
+                                <input type="text" name="email" id="email" placeholder="Enter email"/>
+                        </div>
+                        <div>
+                            <textarea name="comments" rows="12" cols="35">Your message.</textarea>
+                        </div>
+                        <div>
+                            <input type="submit" name="submit" value="Get In Touch"/>
+                        </div>
+                    </form>
+            </div>
+        </div>
+
     </div>
 }

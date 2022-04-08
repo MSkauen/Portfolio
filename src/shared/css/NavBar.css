@@ -9,7 +9,7 @@ ul {
 
 #toolbar {
     flex: 1;
-    justify-content: space-evenly;
+    justify-content: flex-end;
 }
 
 #navbar{
@@ -30,6 +30,14 @@ ul {
 .nav-item a {
     font-family: "Space Mono";
     color: white;
+}
+.nav-item a:before {
+    color: #6E85B2;
+    content: '<';
+}
+.nav-item a:after {
+    color: #6E85B2;
+    content: '/>';
 }
 .nav-logo {
     margin-right: auto;
