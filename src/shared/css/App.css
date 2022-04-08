@@ -59,7 +59,7 @@ h3 {
     column-gap: 1em;
     padding: 0 1em 0 1em;
 }
-.hero {
+.hero, .projects, .space, .contact {
     width: 100%;
     height: 100vh;
     background-color: #261C2C;
@@ -110,7 +110,7 @@ h3 {
     transform: scale(1.01);
 }
 
-.projects {
+.project-grid {
     width: 100%;
     height: 90%;
     display: flex;
