@@ -8,16 +8,19 @@ import Hero from "../sections/Hero";
 import Projects from "../sections/Projects";
 import Space from "../sections/Space";
 import Contact from "../sections/Contact";
+import Skills from "../sections/Skills";
 
 export default function Landing () {
 
-    return<div className="App">
+    return (
+        <div className="App">
             <Links/>
             <NavBar/>
 
-                <Hero/>
-                <Projects/>
-                <Space/>
-                <Contact/>
-    </div>
-}
+            <Hero/>
+            <Projects/>
+            <Skills/>
+            <Contact/>
+
+        </div>
+)}

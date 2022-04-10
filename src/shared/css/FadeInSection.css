@@ -14,6 +14,7 @@
     visibility: hidden;
     will-change: opacity, visibility;
 }
+
 .fade-in.is-visible,
 .fade-in-2.is-visible,
 .fade-in-3.is-visible {

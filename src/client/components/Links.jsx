@@ -4,13 +4,12 @@ import React from "react";
 export default function ParticlesContainer () {
 
     return (
-        <div className="particle-wrapper">
             <Particles id="tsparticles"
             options={{
                 background: {
-                    color: "#261C2C"
+                    color: "#261c2c"
             },
-                fpsLimit: 60,
+                fpsLimit: 30,
                 fullScreen: { enable: false },
                 interactivity: {
                     detectsOn: "canvas",
@@ -18,10 +17,6 @@ export default function ParticlesContainer () {
                         onHover: {
                             enable: true,
                             mode: "repulse",
-                        },
-                        onClick: {
-                            enable: true,
-                            mode: "bubble"
                         },
                         resize: true,
                     },
@@ -41,15 +36,7 @@ export default function ParticlesContainer () {
                             speed: 7,
                             maxSpeed: 40,
                             duration: 10,
-                            factor: 0.1,
-                        },
-                        bubble: {
-                            color: "#fff",
-                            mix: true,
-                            distance: 140,
-                            duration: 1,
-                            opacity: 0.10,
-                            size: 3,
+                            factor: 0.3,
                         }
                     },
                 },
@@ -63,7 +50,7 @@ export default function ParticlesContainer () {
                             area: 1000
                         },
                         limit: 0,
-                        value: 400,
+                        value: 300,
                     },
                     opacity: {
                         animation: {
@@ -91,9 +78,6 @@ export default function ParticlesContainer () {
                 },
             }
             }>
-
             </Particles>
-        </div>
-
     )
 }

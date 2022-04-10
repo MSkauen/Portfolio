@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {
     AppBar,
     Toolbar,
@@ -10,10 +10,8 @@ import { Link } from "react-scroll";
 import DrawerComponent from "./Drawer";
 import "../../shared/css/NavBar.css";
 
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Slide from "@mui/material/Slide";
-import Fab from "@mui/material/Fab";
 
 const useStyles = makeStyles((theme) => ({
     navlinks: {
@@ -36,9 +34,7 @@ const useStyles = makeStyles((theme) => ({
 
 function Navbar() {
     const trigger = useScrollTrigger({threshold: 100});
-
     const classes = useStyles();
-    const theme = useTheme();
     const isMobile = useMediaQuery('(max-width:960px)');
 
     return (
@@ -60,14 +56,14 @@ function Navbar() {
                                             offset={-0}
                                             duration={700}
                                         >
-                                            Contact me
+                                            Contact
                                         </Link>
                                     </li>
 
                                     <li className="nav-item">
                                         <Link
                                             activeClass=""
-                                            to="skills"
+                                            to="skills-innerRef"
                                             spy={true}
                                             smooth={true}
                                             offset={0}
