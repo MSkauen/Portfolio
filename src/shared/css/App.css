@@ -31,6 +31,11 @@ input {
   width: 100%;
   height: 3em;
 }
+hr {
+  width: 80%;
+  border: 1px solid #6E85B2;
+  border-radius: 5px;
+}
 #tsparticles {
   pointer-events: none;
   -webkit-user-select: none;
@@ -44,6 +49,12 @@ input {
   margin: 0;
   z-index: 0; /* if you use -1 you have to set to `"window"` the interactivity.detectsOn property */
 }
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
 .text-zone {
   display: flex;
   flex-direction: column;

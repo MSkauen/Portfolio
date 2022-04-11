@@ -4,6 +4,7 @@ import "../../shared/css/App.css";
 export default function FadeInSection(props) {
   const [isVisible, setVisible] = useState(false);
   const [type, setType] = useState("fade-in");
+  const [className, setClassName] = useState("");
 
   const domRef = useRef();
   let options = {
@@ -13,6 +14,7 @@ export default function FadeInSection(props) {
 
   useEffect(()=> {
       setType(props.type)
+      setClassName(props.className)
       const observer = new IntersectionObserver((entries) => {
           if (entries[0].isIntersecting) {
               setVisible(true);
@@ -30,7 +32,7 @@ export default function FadeInSection(props) {
   return (
     <div
       ref={domRef}
-      className={`${type} ${isVisible ? "is-visible" : ""}`}
+      className={`${className} ${type} ${isVisible ? "is-visible" : ""}`}
     >
       {props.children}
     </div>

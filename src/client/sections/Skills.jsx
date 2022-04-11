@@ -34,6 +34,8 @@ export default function Skills () {
                     <div className="skills-grid">
                         <div className="card">
                             <h3>Front-end Development</h3>
+                            <hr/>
+
                             <div className="card-details">
                                 <FadeInSection type={"fade-in"}>
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
@@ -63,10 +65,13 @@ export default function Skills () {
                         </div>
                         <div className="card">
                             <h3>Back-end Development</h3>
+                            <hr/>
+
                             <div className="card-details">
-                                <FadeInSection type={"fade-in"}>
+                                <FadeInSection className="col" type={"fade-in"}>
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
                                          alt="The logo icon for Express" title="Express"/>
+                                         <span cla>Express.JS</span>
                                 </FadeInSection>
 
                                 <FadeInSection type={"fade-in-2"}>
@@ -107,6 +112,8 @@ export default function Skills () {
                         </div>
                         <div className="card">
                             <h3>Project management</h3>
+                            <hr/>
+
                             <div className="card-details">
                                 <FadeInSection type={"fade-in"}>
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
