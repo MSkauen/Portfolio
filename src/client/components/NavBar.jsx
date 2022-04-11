@@ -1,8 +1,7 @@
-import React, {useEffect} from "react";
+import React from "react";
 import {
     AppBar,
     Toolbar,
-    useTheme,
     useMediaQuery,
 } from "@mui/material";
 import { makeStyles } from "@mui/styles"
@@ -50,7 +49,7 @@ function Navbar() {
                                     <li className="nav-item">
                                         <Link
                                             activeClass=""
-                                            to="contact"
+                                            to="contact-innerRef"
                                             spy={true}
                                             smooth={true}
                                             offset={-0}
