@@ -5,10 +5,12 @@ export default function Contact () {
     return (
         <div className="contact">
             <div className="section">
-            <div className="contact-innerRef"/>
-            <h1>Contact</h1>
+                <div className="contact-innerRef"/>
+                <h1>Contact</h1>
+
                 <div className="contact-card">
                     <h2>Get In Touch</h2>
+
                     <form className="contact-form" action="" method="get" encType="text/plain">
                         <div>
                             <input type="text" name="name" id="name" placeholder="Name"/>
@@ -24,9 +26,8 @@ export default function Contact () {
                     <button className="btn">
                         <SendRoundedIcon height="50%"/>
                     </button>
-
                 </div>
             </div>
         </div>
-    )
+    );
 }

@@ -6,6 +6,5 @@ export default function Footer () {
         <div className="footer">
             <a href={"https://github.com/MSkauen/Portfolio"}>Designed & Developed by Mathias Skauen Harestad</a>
         </div>
-
-    )
+    );
 }

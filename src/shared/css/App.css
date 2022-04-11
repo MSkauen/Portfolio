@@ -316,7 +316,6 @@ hr {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #6E85B2;
-
   background-clip: content-box;
 }
 

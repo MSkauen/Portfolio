@@ -1,8 +1,10 @@
 import React from "react";
-import SPINNER from "../../shared/img/Spinner.svg"
+import Spinner from "../../shared/img/Spinner.svg"
 
-export function LoadingView() {
-  return <div>
-    <img src={SPINNER} alt="React Logo" />
-  </div>;
+export function LoadingView () {
+    return (
+        <div>
+            <img src={Spinner} alt="React Logo" />
+        </div>
+    );
 }

@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-function Navbar() {
+function Navbar () {
     const trigger = useScrollTrigger({threshold: 100});
     const classes = useStyles();
     const isMobile = useMediaQuery('(max-width:960px)');
