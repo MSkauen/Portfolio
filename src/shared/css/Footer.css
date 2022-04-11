@@ -1,0 +1,11 @@
+.footer {
+    text-align: center;
+    background-color: rgb(38, 28, 44);
+    padding: 2em;
+}
+.footer a {
+    font-size: 0.7em;
+    color: #fff;
+    margin: 2em;
+    text-decoration: none;
+}

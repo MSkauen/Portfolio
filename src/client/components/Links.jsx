@@ -1,82 +1,82 @@
-import Particles from "react-tsparticles";
-import { loadLinksPreset } from "tsparticles-preset-links";
 import React from "react";
+import Particles from "react-tsparticles";
 
 export default function ParticlesContainer () {
-
     return (
-        <div className="particle-wrapper">
-            <Particles id="tsparticles"
-            options={{
-                background: {
-                    color: "#000"
-            },
-                fpsLimit: 60,
-                fullScreen: { enable: false },
-                interactivity: {
-                    detectsOn: "canvas",
-                    events: {
-                        onClick: {
-                            enable: true,
-                            mode: "push",
-                        },
-                        onHover: {
-                            enable: true,
-                            mode: "repulse",
-                        },
-                        resize: true,
-                    },
-                    modes: {
-                        push: {
-                            quantity: 4,
-                        },
-                        repulse: {
-                            distance: 50,
-                            duration: 1.4,
-                        },
-                    },
+            <Particles
+                id="tsparticles"
+                options={{
+                    background: {
+                        color: "#261c2c"
                 },
-                particles: {
-                    color: {
-                        value: "#fff"
-                    },
-                    number: {
-                        density: {
-                            enable: true,
-                            area: 1000
+                    fpsLimit: 30,
+                    fullScreen: { enable: false },
+                    interactivity: {
+                        detectsOn: "canvas",
+                        events: {
+                            onHover: {
+                                enable: true,
+                                mode: "repulse",
+                            },
+                            resize: true,
                         },
-                        limit: 0,
-                        value: 400,
-                    },
-                    opacity: {
-                        animation: {
-                            enable: true,
-                            minimumValue: 0.05,
-                            speed: 5,
-                            sync: false
+                        modes: {
+                            grab: {
+                                distance: 70,
+                                links: {
+                                    enable: true,
+                                    distance: 120,
+                                    color: "#fff",
+                                    opacity: 0.2,
+                                    width: 1
+                                },
+                            },
+                            repulse: {
+                                distance: 100,
+                                speed: 7,
+                                maxSpeed: 40,
+                                duration: 10,
+                                factor: 0.3,
+                            }
                         },
-                        random: {
-                            enable: true,
-                            minimumValue: 0.05
-                        },
-                        value: 1
                     },
-                    shape: {
-                        type: "circle"
-                    },
-                    size: {
-                        random: {
-                            enable: true,
-                            minimumValue: 0.5
+                    particles: {
+                        color: {
+                            value: "#fff"
                         },
-                        value: 1
-                    }
-                },
-            }
-            }>
-
-            </Particles>
-        </div>
-
-    )
+                        number: {
+                            density: {
+                                enable: true,
+                                area: 1000
+                            },
+                            limit: 0,
+                            value: 150,
+                        },
+                        opacity: {
+                            animation: {
+                                enable: true,
+                                minimumValue: 0.05,
+                                speed: 5,
+                                sync: false
+                            },
+                            random: {
+                                enable: true,
+                                minimumValue: 0.05
+                            },
+                            value: 1
+                        },
+                        shape: {
+                            type: "circle"
+                        },
+                        size: {
+                            random: {
+                                enable: true,
+                                minimumValue: 0.5
+                            },
+                            value: 1
+                        }
+                    },
+                }
+            }/>
+    );
 }

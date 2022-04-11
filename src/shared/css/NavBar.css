@@ -9,7 +9,7 @@ ul {
 
 #toolbar {
     flex: 1;
-    justify-content: space-evenly;
+    justify-content: flex-end;
 }
 
 #navbar{
@@ -21,7 +21,7 @@ ul {
 }
 
 .nav-item {
-    margin: 1.5em 1.5em;
+    margin: 1.5em 1em;
     line-height: 1.6;
     letter-spacing: 0.130556em;
     float: right;
@@ -29,7 +29,16 @@ ul {
 }
 .nav-item a {
     font-family: "Space Mono";
+    font-size: 0.9em;
     color: white;
+}
+.nav-item a:before {
+    color: #6E85B2;
+    content: '<';
+}
+.nav-item a:after {
+    color: #6E85B2;
+    content: '/>';
 }
 .nav-logo {
     margin-right: auto;
@@ -37,16 +46,9 @@ ul {
     letter-spacing: 0.130556em;
     float: left;
 }
-.logo{
-    padding: 1em;
-    height: 4em;
-    z-index: 20;
-}
 .nav-item:hover {
-    transform: translateY(0.25em);
     cursor: pointer;
     color: #bebebe;
-    text-decoration: underline;
 }
 
 @media (max-width: 960px) {
@@ -55,23 +57,24 @@ ul {
         justify-content: flex-end;
     }
 
+    #toolbar a:link {
+        color: #b6995a;
+    }
+
+    #toolbar a:visited {
+        color: #b6995a;
+    }
+
+    #toolbar a:hover {
+        color: black;
+    }
+
     li a {
         height: 100%;
         display: block;
         color: #b6995a;
         text-align: center;
         text-decoration: none;
-    }
-    a:link {
-        color: #b6995a;
-    }
-
-    a:visited {
-        color: #b6995a;
-    }
-
-    a:hover {
-        color: black;
     }
     #navbar {
         position: fixed;
