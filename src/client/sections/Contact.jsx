@@ -1,16 +1,15 @@
 import React from "react";
 import SendRoundedIcon from "@mui/icons-material/SendRounded";
-import {Link} from "react-scroll";
 
 export default function Contact () {
     return (
         <div className="contact">
             <div className="section">
             <div className="contact-innerRef"/>
-            <h1 style={{transform: 'translateX(-75%)'}}>Contact</h1>
+            <h1>Contact</h1>
                 <div className="contact-card">
                     <h2>Get In Touch</h2>
-                    <form className="contact-form" action="mailto:info@w3docs.com" method="get" encType="text/plain">
+                    <form className="contact-form" action="" method="get" encType="text/plain">
                         <div>
                             <input type="text" name="name" id="name" placeholder="Name"/>
                         </div>

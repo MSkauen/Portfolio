@@ -2,6 +2,7 @@ import React from "react";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
 import FadeInSection from "../lib/FadeInSection";
+import Scrumwise_Logo from "../../shared/img/Scrumwise_Logo.png"
 
 export default function Skills () {
 
@@ -105,7 +106,7 @@ export default function Skills () {
                             </div>
                         </div>
                         <div className="card">
-                            <h3>Version control / Project management</h3>
+                            <h3>Project management</h3>
                             <div className="card-details">
                                 <FadeInSection type={"fade-in"}>
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
@@ -115,6 +116,11 @@ export default function Skills () {
                                 <FadeInSection type={"fade-in-2"}>
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg"
                                          alt="The logo icon for Git" title="Git"/>
+                                </FadeInSection>
+
+                                <FadeInSection type={"fade-in-3"}>
+                                    <img src={Scrumwise_Logo}
+                                         alt="The logo icon for Scrumwise" title="Scrumwise"/>
                                 </FadeInSection>
                             </div>
                         </div>

@@ -13,7 +13,6 @@ export default function FadeInSection(props) {
 
   useEffect(()=> {
       setType(props.type)
-      console.log("11")
       const observer = new IntersectionObserver((entries) => {
           if (entries[0].isIntersecting) {
               setVisible(true);

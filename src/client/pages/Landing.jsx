@@ -9,6 +9,7 @@ import Projects from "../sections/Projects";
 import Space from "../sections/Space";
 import Contact from "../sections/Contact";
 import Skills from "../sections/Skills";
+import Footer from "../sections/Footer";
 
 export default function Landing () {
 
@@ -17,10 +18,10 @@ export default function Landing () {
             <Links/>
             <NavBar/>
 
-            <Hero/>
-            <Projects/>
-            <Skills/>
-            <Contact/>
-
+                <Hero/>
+                <Projects/>
+                <Skills/>
+                <Contact/>
+                <Footer/>
         </div>
 )}
