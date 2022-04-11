@@ -39,8 +39,8 @@ hr {
 #tsparticles {
   pointer-events: none;
   -webkit-user-select: none;
-  height: 110%;
-  position: fixed;
+  height: 390%;
+  position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
@@ -53,6 +53,7 @@ hr {
 .col {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .text-zone {
@@ -69,6 +70,9 @@ hr {
   transform: translateY(-50%);
 }
 .name {
+  font-size: clamp(40px, 7vw, 80px);
+  line-height: 1;
+  padding-top: 0.3em;
   color: #6e85b2;
 }
 .call-to-action {
@@ -84,7 +88,7 @@ hr {
 .space,
 .contact,
 .skills {
-  width: 100%;
+  padding: 0 2em;
   height: 100vh;
   background-color: #261c2c;
   flex-direction: row;
@@ -94,6 +98,7 @@ hr {
   display: flex;
 }
 .section {
+  pointer-events: none;
   width: 100%;
   height: 80%;
 
@@ -118,6 +123,9 @@ hr {
   color: #6e85b2;
   font-family: sans-serif;
 }
+.contact {
+  height: 90vh;
+}
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -125,6 +133,7 @@ hr {
   row-gap: 0.5em;
 }
 .card {
+  pointer-events: none;
   text-align: center;
   overflow: hidden;
   width: 30%;
@@ -153,12 +162,12 @@ hr {
   gap: 2em;
 }
 .contact-card {
+  pointer-events: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   overflow: hidden;
-  width: 100%;
   height: 70%;
   transition: 0.16s ease-in-out;
   border-radius: 5px;
@@ -191,12 +200,17 @@ hr {
   gap: 50px;
 }
 .skills-grid img {
-  width: 5em;
+  pointer-events: auto;
+  width: 4em;
   transition: 0.16s ease-out;
 }
 .skills-grid img:hover {
 
   transform: scale(1.1);
+}
+.img-label {
+  margin-bottom: 5px;
+  color: white;
 }
 .particle-wrapper {
   z-index: -10;

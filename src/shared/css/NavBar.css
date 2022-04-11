@@ -21,7 +21,7 @@ ul {
 }
 
 .nav-item {
-    margin: 1.5em 1.5em;
+    margin: 1.5em 1em;
     line-height: 1.6;
     letter-spacing: 0.130556em;
     float: right;
@@ -29,6 +29,7 @@ ul {
 }
 .nav-item a {
     font-family: "Space Mono";
+    font-size: 0.9em;
     color: white;
 }
 .nav-item a:before {

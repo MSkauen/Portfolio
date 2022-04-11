@@ -50,7 +50,7 @@ export default function ParticlesContainer () {
                             area: 1000
                         },
                         limit: 0,
-                        value: 300,
+                        value: 150,
                     },
                     opacity: {
                         animation: {

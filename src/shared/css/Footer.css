@@ -1,3 +1,8 @@
+.footer {
+    text-align: center;
+    background-color: rgb(38, 28, 44);
+    padding: 2em;
+}
 .footer a {
     color: #6e85b2;
     margin: 2em;

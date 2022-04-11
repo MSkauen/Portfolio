@@ -10,17 +10,20 @@ export default function Hero () {
     return (
         <div className="hero">
             <div className="text-zone">
-                <h1>
-                    <FadeInSection type={"fade-in-3"}>
-                        Hello,
+
+                <div>
+                    <FadeInSection type={"fade-in-3"} >
+                        <h3 className="">Hi, my name is</h3>
                     </FadeInSection>
+
                     <FadeInSection type={"fade-in-2"}>
-                        I'm <span className="name">Mathias</span>
+                        <h1 className="name">Mathias</h1>
                     </FadeInSection>
+
                     <FadeInSection type={"fade-in"}>
-                        I create web solutions
+                        <h1>I create web solutions</h1>
                     </FadeInSection>
-                </h1>
+                </div>
                 <div>
                     <h2>Frontend / Backend Developer</h2>
                     <div className="row call-to-action">

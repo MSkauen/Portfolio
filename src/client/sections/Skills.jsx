@@ -69,42 +69,49 @@ export default function Skills () {
 
                             <div className="card-details">
                                 <FadeInSection className="col" type={"fade-in"}>
+                                    <span className={"img-label"}>Express.JS</span>
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
                                          alt="The logo icon for Express" title="Express"/>
-                                         <span cla>Express.JS</span>
                                 </FadeInSection>
 
-                                <FadeInSection type={"fade-in-2"}>
+                                <FadeInSection className="col" type={"fade-in-2"}>
+                                    <span className={"img-label"}>jQuery</span>
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain-wordmark.svg"
                                          alt="The logo icon for jQuery" title="jQuery"/>
                                 </FadeInSection>
 
-                                <FadeInSection type={"fade-in-3"}>
+                                <FadeInSection className="col" type={"fade-in-3"}>
+                                    <span className={"img-label"}>Mongo DB</span>
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"
                                          alt="The logo icon for MongoDB" title="Mongo DB"/>
                                 </FadeInSection>
 
-                                <FadeInSection type={"fade-in"}>
+                                <FadeInSection className="col" type={"fade-in"}>
+                                    <span className={"img-label"}>MySQL</span>
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
                                          alt="The logo icon for MySQL" title="MySQL"/>
                                 </FadeInSection>
 
-                                <FadeInSection type={"fade-in-2"}>
+                                <FadeInSection className="col" type={"fade-in-2"}>
+                                    <span className={"img-label"}>NPM</span>
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg"
                                          alt="The logo icon for NPM" title="NPM"/>
                                 </FadeInSection>
 
-                                <FadeInSection type={"fade-in-3"}>
+                                <FadeInSection className="col" type={"fade-in-3"}>
+                                    <span className={"img-label"}>Node.JS</span>
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg"
                                          alt="The logo icon for NodeJS" title="Node JS"/>
                                 </FadeInSection>
 
-                                <FadeInSection type={"fade-in"}>
+                                <FadeInSection className="col" type={"fade-in"}>
+                                    <span className={"img-label"}>Heroku</span>
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original-wordmark.svg"
                                          alt="The logo icon for Heroku" title="Heroku"/>
                                 </FadeInSection>
 
-                                <FadeInSection type={"fade-in-2"}>
+                                <FadeInSection className="col" type={"fade-in-2"}>
+                                    <span className={"img-label"}>Java</span>
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
                                          alt="The logo icon for Java" title="Java"/>
                                 </FadeInSection>
@@ -118,11 +125,6 @@ export default function Skills () {
                                 <FadeInSection type={"fade-in"}>
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
                                          alt="The logo icon for GitHub" title="GitHub"/>
-                                </FadeInSection>
-
-                                <FadeInSection type={"fade-in-2"}>
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg"
-                                         alt="The logo icon for Git" title="Git"/>
                                 </FadeInSection>
 
                                 <FadeInSection type={"fade-in-3"}>
