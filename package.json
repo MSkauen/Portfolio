@@ -7,7 +7,7 @@
     "start:dev": "concurrently npm:start:parcel npm:start:express",
     "start:express": "node src/server/server.js",
     "start:parcel": "parcel src/shared/html/index.html",
-    "build": "parcel build src/shared/html/index.html"
+    "build": "parcel build src/shared/html/index.html --no-source-maps"
   },
   "repository": {
     "type": "git",
