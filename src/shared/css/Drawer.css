@@ -1,3 +1,14 @@
 #drawer .MuiPaper-root {
-    background-color: #000;
+    background: rgba(62, 44, 62, 0.7);
+    text-align: left;
+    overflow-x: hidden;
+}
+#drawer hr {
+    margin-left: 1em;
+    width: 100%;
+    opacity: 30%;
+}
+#drawer a {
+    filter: drop-shadow(0px 0px 2px rgb(0, 0, 0));
+    letter-spacing: 2px;
 }

@@ -9,18 +9,13 @@ export default function Contact () {
                 <h1>Contact</h1>
 
                 <div className="contact-card">
-                    <h2>Get In Touch</h2>
+                    <h3>Get In Touch</h3>
+                    <hr/>
 
                     <form className="contact-form" action="" method="get" encType="text/plain">
-                        <div>
                             <input type="text" name="name" id="name" placeholder="Name"/>
-                        </div>
-                        <div>
                             <input type="text" name="email" id="email" placeholder="Enter email"/>
-                        </div>
-                        <div>
                             <textarea name="comments" rows="12" cols="35" placeholder="Your message."/>
-                        </div>
                     </form>
 
                     <button className="btn">

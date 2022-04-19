@@ -35,7 +35,7 @@ export default function ParticlesContainer () {
                                 distance: 100,
                                 speed: 7,
                                 maxSpeed: 40,
-                                duration: 10,
+                                duration: 7,
                                 factor: 0.3,
                             }
                         },
@@ -71,7 +71,7 @@ export default function ParticlesContainer () {
                         size: {
                             random: {
                                 enable: true,
-                                minimumValue: 0.5
+                                minimumValue: 0.2
                             },
                             value: 1
                         }
