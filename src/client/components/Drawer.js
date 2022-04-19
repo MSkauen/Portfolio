@@ -11,8 +11,10 @@ import {
 import MenuIcon from '@mui/icons-material/Menu';
 import { makeStyles } from "@mui/styles"
 import { Link } from "react-scroll";
+import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 
 const useStyles = makeStyles(()=>({
+
     palette: {
         background: {
             default: "black"
@@ -20,7 +22,7 @@ const useStyles = makeStyles(()=>({
     },
     link:{
         textDecoration:"none",
-        color: "black",
+        color: "white",
         fontSize: "20px",
     },
     icon:{
@@ -34,16 +36,23 @@ export default function DrawerComponent () {
 
     return (
         <div>
-            <Drawer
+            <SwipeableDrawer
+                id="drawer"
                 className={classes.palette}
                 anchor={"right"}
                 hideBackdrop={true}
                 open={openDrawer}
                 onClose={() => setOpenDrawer(false)}
                 onClick={() => setOpenDrawer(false)}
+                onOpen={() => setOpenDrawer(true)}
                 onKeyDown={() => setOpenDrawer(false)}
             >
-                <List className={"navbar"}>
+                <List className={"navbar"} >
+                    <ListItem onClick={() => setOpenDrawer(false)}>
+                        <ListItemText>
+
+                        </ListItemText>
+                    </ListItem>
                     <ListItem onClick={() => setOpenDrawer(false)}>
                         <ListItemText>
                             <Link
@@ -55,68 +64,68 @@ export default function DrawerComponent () {
                                 offset={-0}
                                 duration={700}
                                 onClick={() => setOpenDrawer(false)}
-                            >Hjem</Link>
+                            >About</Link>
                         </ListItemText>
                     </ListItem>
 
-                    <Divider/>
+                    <hr/>
 
                     <ListItem onClick={() => setOpenDrawer(false)}>
                         <ListItemText>
                             <Link
                                 className={classes.link}
                                 activeClass=""
-                                to="about-us"
+                                to="project-innerRef"
                                 spy={true}
                                 smooth={true}
                                 offset={-0}
                                 duration={700}
                                 onClick={() => setOpenDrawer(false)}
-                            >Artister</Link>
+                            >Projects</Link>
                         </ListItemText>
                     </ListItem>
 
-                    <Divider/>
+                    <hr/>
 
                     <ListItem onClick={() => setOpenDrawer(false)}>
                         <ListItemText>
                             <Link
                                 className={classes.link}
                                 activeClass=""
-                                to="booking"
+                                to="skills-innerRef"
                                 spy={false}
                                 smooth={true}
                                 offset={0}
                                 duration={500}
                                 onClick={() => setOpenDrawer(false)}
                             >
-                                Kontakt & Booking
+                                Skills
                             </Link>
                         </ListItemText>
                     </ListItem>
 
-                    <Divider/>
+                    <hr/>
 
                     <ListItem onClick={() => setOpenDrawer(false)}>
                         <ListItemText>
                             <Link
                                 className={classes.link}
                                 activeClass=""
-                                to="faq"
+                                to="contact-innerRef"
                                 spy={false}
                                 smooth={true}
                                 offset={0}
                                 duration={500}
                                 onClick={() => setOpenDrawer(false)}
                             >
-                                FAQ
+                                Contact
                             </Link>
                         </ListItemText>
                     </ListItem>
 
-                    <Divider/>
+                    <hr/>
                 </List>
-            </Drawer>
+            </SwipeableDrawer>
 
             <IconButton onClick={() => setOpenDrawer(!openDrawer)} className={classes.icon}>
                 <MenuIcon

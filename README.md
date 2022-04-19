@@ -1,4 +1,7 @@
 # Mathias Skauen Harestad's Portfolio
+
+![My website](assets/images/Screenshot.jpg)
+
 ## Welcome!
 
 This repo is created for my one and only web portfolio!

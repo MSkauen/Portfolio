@@ -10,15 +10,15 @@ export default function Hero () {
         <div className="hero">
             <div className="text-zone">
                 <div>
-                    <FadeInSection type={"fade-in-3"} >
+                    <FadeInSection className="text" type={"fade-in-3"} >
                         <h3 className="">Hi, my name is</h3>
                     </FadeInSection>
 
-                    <FadeInSection type={"fade-in-2"}>
+                    <FadeInSection className="text" type={"fade-in-2"}>
                         <h1 className="name">Mathias</h1>
                     </FadeInSection>
 
-                    <FadeInSection type={"fade-in"}>
+                    <FadeInSection className="text" type={"fade-in"}>
                         <h1>I create web solutions</h1>
                     </FadeInSection>
                 </div>

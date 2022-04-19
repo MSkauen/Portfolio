@@ -9,45 +9,50 @@ export default function Skills () {
                 <div className="skills-innerRef"/>
                 <h1>Skills</h1>
 
-                <div className="skills-grid">
+                <div className="grid">
                     <div className="card">
                         <h3>Front-end Development</h3>
                         <hr/>
 
-                        <div className="card-details">
-                            <FadeInSection type={"fade-in"}>
+                        <div className="skill-details">
+                            <FadeInSection className="col" type={"fade-in"}>
+                                <span className={"img-label"}>React</span>
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
                                      alt="The logo icon for react" title="React"/>
                             </FadeInSection>
 
-                            <FadeInSection type={"fade-in-2"}>
+                            <FadeInSection className="col" type={"fade-in-2"}>
+                                <span className={"img-label"}>JavaScript</span>
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
                                      alt="The logo icon for Javascript" title="JavaScript"/>
                             </FadeInSection>
 
-                            <FadeInSection type={"fade-in-3"}>
+                            <FadeInSection className="col" type={"fade-in-3"}>
+                                <span className={"img-label"}>HTML</span>
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
                                      alt="The logo icon for HTML 5" title="HTML 5"/>
                             </FadeInSection>
 
-                            <FadeInSection type={"fade-in"}>
+                            <FadeInSection className="col" type={"fade-in"}>
+                                <span className={"img-label"}>CSS</span>
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
                                      alt="The logo icon for CSS3" title="CSS 3"/>
                             </FadeInSection>
 
-                            <FadeInSection type={"fade-in-2"}>
+                            <FadeInSection className="col" type={"fade-in-2"}>
+                                <span className={"img-label"}>Bootstrap</span>
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain-wordmark.svg"
                                      alt="The logo icon for Bootstrap" title="Bootstrap"/>
                             </FadeInSection>
                         </div>
                     </div>
                     <div className="card">
-                        <h3>Back-end Development</h3>
-                        <hr/>
+                            <h3>Back-end Development</h3>
+                            <hr/>
 
-                        <div className="card-details">
+                        <div className="skill-details">
                             <FadeInSection className="col" type={"fade-in"}>
-                                <span className={"img-label"}>Express.JS</span>
+                                <span className={"img-label"}>Express</span>
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
                                      alt="The logo icon for Express" title="Express"/>
                             </FadeInSection>
@@ -99,13 +104,13 @@ export default function Skills () {
                         <h3>Project management</h3>
                         <hr/>
 
-                        <div className="card-details">
-                            <FadeInSection type={"fade-in"}>
+                        <div className="skill-details">
+                            <FadeInSection className="col" type={"fade-in"}>
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
                                      alt="The logo icon for GitHub" title="GitHub"/>
                             </FadeInSection>
 
-                            <FadeInSection type={"fade-in-3"}>
+                            <FadeInSection className="col" type={"fade-in-3"}>
                                 <img src={Scrumwise_Logo}
                                      alt="The logo icon for Scrumwise" title="Scrumwise"/>
                             </FadeInSection>

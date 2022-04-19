@@ -32,11 +32,11 @@ ul {
     font-size: 0.9em;
     color: white;
 }
-.nav-item a:before {
+.nav-item a:before, #drawer a:before {
     color: #6E85B2;
     content: '<';
 }
-.nav-item a:after {
+.nav-item a:after, #drawer a:after {
     color: #6E85B2;
     content: '/>';
 }
@@ -73,7 +73,7 @@ ul {
         height: 100%;
         display: block;
         color: #b6995a;
-        text-align: center;
+        text-align: left;
         text-decoration: none;
     }
     #navbar {
