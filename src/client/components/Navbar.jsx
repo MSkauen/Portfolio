@@ -38,7 +38,7 @@ function Navbar () {
 
     return (
             <AppBar elevation={0}  id="navbar" position="fixed">
-                <Slide in={!trigger}>
+                <Slide in={trigger}>
                     <Toolbar id="toolbar">
 
                         {isMobile ? (
