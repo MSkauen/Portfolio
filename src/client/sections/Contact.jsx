@@ -15,7 +15,7 @@ export default function Contact () {
                     <form className="contact-form" action="" method="get" encType="text/plain">
                             <input type="text" name="name" id="name" placeholder="Name"/>
                             <input type="text" name="email" id="email" placeholder="Enter email"/>
-                            <textarea name="comments" rows="12" cols="35" placeholder="Your message."/>
+                            <textarea name="comments" rows="12" cols="35" placeholder="..."/>
                     </form>
 
                     <button className="btn">

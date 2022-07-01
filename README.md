@@ -4,16 +4,15 @@
 
 ## Welcome!
 
-This repo is created for my one and only web portfolio!
+This project is still under development, but feel free to install the project yourself.\
 
-The project is still under development, but feel free to install the project yourself.\
-Or check it out at http://mskauen-portfolio.herokuapp.com/
+Or check it out live at: http://mskauen-portfolio.herokuapp.com/
 
 ## How to run
 * Run command `` npm install ``
 * Run command `` npm start `` / ``npm run start``
 * Go to [http://localhost:8080](http://localhost:8080) in browser. 
-* Go to [http://localhost:1234](http://localhost:1234) for parcel access if running in dev mode
+* Go to [http://localhost:1234](http://localhost:1234) to access parcel server if running in dev mode
   *  ``npm run start:dev``
 
 * For troubleshooting, see "Troubleshooting" below.
@@ -22,10 +21,16 @@ Or check it out at http://mskauen-portfolio.herokuapp.com/
 * Create an about me section
 * Maybe create some CRUD operations?
     * Blog posts and/or comments?
+* Deploy
+    * Setup DNS target
+    * Cloudflare for ALIAS records
+    * NS change on domain registrar's DNS settings
 
 ### UI/UX
 * Full web responsiveness (WIP)
     * Mobile, tablet, etc..
+* Readability
+* Re-work card components, more info etc
 
 
 ## Troubleshooting
@@ -43,7 +48,8 @@ Use ``heroku logs --tail -a <Heroku app name>`` to check heroku logs
 #### Noteable Errors
 * H10 
     * 'error code=H10 desc="App crashed" method=GET path="/"'
-    * Use ``heroku ps:scale web=1 -a <Heroku app name>`` to scale dynos and fix error.
+    * Use ``heroku ps:scale web=1 -a <Heroku app name>`` to scale dyno and fix error.
+    * And/or use ``heroku ps:restart web=1 -a <Heroku app name>`` to restart dyno.
 
 ## Available Scripts
 

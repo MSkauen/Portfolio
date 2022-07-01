@@ -28,7 +28,7 @@ ul {
     transition: 0.3s ease-out;
 }
 .nav-item a {
-    font-family: "Space Mono";
+    font-family: "Space Mono", serif;
     font-size: 0.9em;
     color: white;
 }

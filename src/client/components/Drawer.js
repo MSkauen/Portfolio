@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "../../shared/css/Drawer.css";
 import {
-  Divider,
-  Drawer,
   IconButton,
   List,
   ListItem,
@@ -131,7 +129,9 @@ export default function DrawerComponent () {
                 <MenuIcon
                     anchor={"right"}
                     sx={{
-                        borderRadius: '0'
+                        borderRadius: '0',
+                        width: '2em',
+                        height: 'auto'
                     }}
                 />
             </IconButton>
