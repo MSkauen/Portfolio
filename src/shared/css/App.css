@@ -92,7 +92,7 @@ body {
   position: absolute;
   min-width: 100%;
   min-height: 120%;
-  opacity: 10%;
+  opacity: 0.04;
   filter: hue-rotate(46deg);
 
   -webkit-animation: ease-out fadein 3s; /* Safari, Chrome and Opera > 12.1 */
@@ -160,7 +160,7 @@ body {
   box-shadow: 0 -8px 13px #00000040;
 }
 .space {
-  height: 45vh;
+  height: 25vh;
   padding: 0 3em;
   /*background-color: #261c2c;*/
   flex-direction: row;
