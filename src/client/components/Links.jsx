@@ -67,7 +67,8 @@ export function ParticlesContainer () {
                         }
                     },
                 }
-                }>
+                }
+            >
             </Particles>
     );
 }

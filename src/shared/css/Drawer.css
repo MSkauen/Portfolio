@@ -1,6 +1,9 @@
 #drawer .MuiPaper-root {
-    background: rgba(62, 44, 62, 0.7);
+    display: flex;
+    align-content: flex-end;
+    justify-content: space-evenly;
     text-align: left;
+    background: #3e2c3eb3;
     overflow-x: hidden;
 }
 #drawer hr {

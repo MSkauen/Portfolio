@@ -37,8 +37,8 @@ function Navbar () {
     const isMobile = useMediaQuery('(max-width:960px)');
 
     return (
-            <AppBar elevation={0}  id="navbar" position="fixed">
-                <Slide in={trigger}>
+            <AppBar elevation={0} id="navbar" position="fixed">
+                <Slide in={trigger} direction={"down"}>
                     <Toolbar id="toolbar">
 
                         {isMobile ? (

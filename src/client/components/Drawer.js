@@ -130,9 +130,10 @@ export default function DrawerComponent () {
                     anchor={"right"}
                     sx={{
                         borderRadius: '0',
-                        width: '2em',
-                        height: 'auto'
+                        top: 'auto', bottom: '0',
+                        padding: '0em 1em 1em 0em',
                     }}
+
                 />
             </IconButton>
         </div>

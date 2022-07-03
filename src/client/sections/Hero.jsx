@@ -23,7 +23,7 @@ export default function Hero () {
                     <h2>Frontend / Backend Developer</h2>
                     <div className="row call-to-action">
 
-                        <a href="https://github.com/MSkauen" title="Github profile">
+                        <a href="https://github.com/MSkauen" title="Github">
                             <button className="btn">
                                 <img className="logo" src={githubLogo} alt="Github"/>
                                 <img className="mark" src={githubMark} alt="GitHub Logo"/>
@@ -31,6 +31,7 @@ export default function Hero () {
                         </a>
 
                         <Link
+                            title="Send email"
                             activeClass=""
                             to="contact-innerRef"
                             spy={true}
@@ -48,7 +49,7 @@ export default function Hero () {
             <div className="hero-footer">
                 <Link
                     activeClass=""
-                    to="project-innerRef"
+                    to="skills-innerRef"
                     spy={true}
                     smooth={true}
                     offset={0}

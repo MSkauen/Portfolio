@@ -1,7 +1,7 @@
 import React from "react";
 import "../../shared/css/App.css";
 import "../../shared/css/FadeInSection.css";
-import background from "url:../../shared/img/background.png";
+import background from "url:../../shared/img/background.webp";
 import {ParticlesContainer as Links} from "../components/Links";
 import Background from "../lib/Background.jsx";
 import NavBar from "../components/Navbar";
@@ -18,8 +18,8 @@ export default function Landing () {
             <Background extraOffsetY={-100} src={background} scale={1}/>
             <NavBar/>
                 <Hero/>
-                <Projects/>
                 <Skills/>
+                <Projects/>
                 <Contact/>
             <Footer/>
         </div>

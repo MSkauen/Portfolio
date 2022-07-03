@@ -11,6 +11,13 @@ ul {
     flex: 1;
     justify-content: flex-end;
 }
+#toolbar-mobile {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    flex: 1;
+    justify-content: flex-end;
+}
 
 #navbar{
     z-index: 99;
@@ -78,6 +85,12 @@ ul {
     }
     #navbar {
         position: fixed;
+    }
+    .nav-item a:before, #drawer a:before {
+        content: '';
+    }
+    .nav-item a:after, #drawer a:after {
+        content: '';
     }
 
 }
