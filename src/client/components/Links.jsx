@@ -10,7 +10,7 @@ export function ParticlesContainer () {
                         color: "#17121c"
                 },
                     fpsLimit: 30,
-                    fullScreen: { enable: false },
+                    fullScreen: { enable: true },
                     interactivity: {
                         detectsOn: "canvas",
                         events: {
@@ -36,17 +36,17 @@ export function ParticlesContainer () {
                         },
                         number: {
                             density: {
-                                enable: true,
-                                area: 1000
+                                enable: false,
+                                area: 10
                             },
                             limit: 0,
-                            value: 150,
+                            value: 50,
                         },
                         opacity: {
                             animation: {
                                 enable: true,
                                 minimumValue: 0.05,
-                                speed: 5,
+                                speed: 0.5,
                                 sync: false
                             },
                             random: {

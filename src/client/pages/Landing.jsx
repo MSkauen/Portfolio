@@ -14,8 +14,11 @@ import Footer from "../sections/Footer";
 export default function Landing () {
     return (
         <div className="App">
+            {/*
+            Currently disabled due to performance issues
+
             <Links/>
-            <Background extraOffsetY={-100} src={background} scale={1}/>
+            <Background extraOffsetY={-100} src={background} scale={1}/>*/}
             <NavBar/>
                 <Hero/>
                 <Skills/>

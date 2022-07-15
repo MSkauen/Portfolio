@@ -156,16 +156,11 @@ body {
 .hero {
   height: 100vh;
 }
-.skills .section {
-  backdrop-filter: blur(20px);
+.skills .projects {
   border-radius: 25px;
   box-shadow: 0 0 23px #00000040;
 }
-.projects .section {
-  backdrop-filter: blur(20px);
-  border-radius: 25px;
-  box-shadow: 0 0 23px #00000040;
-}
+
 .space {
   height: 25vh;
   padding: 0 3em;
@@ -250,7 +245,6 @@ body {
   transition: 0.22s ease-in-out;
 }
 .skill-details {
-  flex-wrap: wrap;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
