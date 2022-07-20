@@ -11,9 +11,16 @@ ul {
     flex: 1;
     justify-content: flex-end;
 }
+#toolbar-mobile {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    flex: 1;
+    justify-content: flex-end;
+}
 
 #navbar{
-    z-index: 99;
+    z-index: 9999;
     background: -webkit-linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.31) 0%, rgba(0,0,0,0.001) 80%);
     background: -moz-linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.31) 0%, rgba(0,0,0,0.001) 80%);
     background: -ms-linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.31) 0%, rgba(0,0,0,0.001) 80%);
@@ -28,7 +35,7 @@ ul {
     transition: 0.3s ease-out;
 }
 .nav-item a {
-    font-family: "Space Mono";
+    font-family: "Space Mono", serif;
     font-size: 0.9em;
     color: white;
 }
@@ -78,6 +85,12 @@ ul {
     }
     #navbar {
         position: fixed;
+    }
+    .nav-item a:before, #drawer a:before {
+        content: '';
+    }
+    .nav-item a:after, #drawer a:after {
+        content: '';
     }
 
 }

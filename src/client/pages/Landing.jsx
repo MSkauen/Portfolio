@@ -1,7 +1,9 @@
 import React from "react";
 import "../../shared/css/App.css";
 import "../../shared/css/FadeInSection.css";
-import Background from "../components/Links";
+import background from "url:../../shared/img/background.webp";
+import {ParticlesContainer as Links} from "../components/Links";
+import Background from "../lib/Background.jsx";
 import NavBar from "../components/Navbar";
 import Hero from "../sections/Hero";
 import Projects from "../sections/Projects";
@@ -12,11 +14,15 @@ import Footer from "../sections/Footer";
 export default function Landing () {
     return (
         <div className="App">
-            <Background/>
+            {/*
+            Currently disabled due to performance issues
+
+            <Links/>
+            <Background extraOffsetY={-100} src={background} scale={1}/>*/}
             <NavBar/>
                 <Hero/>
-                <Projects/>
                 <Skills/>
+                <Projects/>
                 <Contact/>
             <Footer/>
         </div>

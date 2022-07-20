@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import "../../shared/css/Drawer.css";
 import {
-  Divider,
-  Drawer,
   IconButton,
   List,
   ListItem,
   ListItemText,
   } from "@mui/material";
+import { Cross as Hamburger } from 'hamburger-react'
 import MenuIcon from '@mui/icons-material/Menu';
 import { makeStyles } from "@mui/styles"
 import { Link } from "react-scroll";
@@ -50,7 +49,7 @@ export default function DrawerComponent () {
                 <List className={"navbar"} >
                     <ListItem onClick={() => setOpenDrawer(false)}>
                         <ListItemText>
-
+                            
                         </ListItemText>
                     </ListItem>
                     <ListItem onClick={() => setOpenDrawer(false)}>
@@ -75,23 +74,6 @@ export default function DrawerComponent () {
                             <Link
                                 className={classes.link}
                                 activeClass=""
-                                to="project-innerRef"
-                                spy={true}
-                                smooth={true}
-                                offset={-0}
-                                duration={700}
-                                onClick={() => setOpenDrawer(false)}
-                            >Projects</Link>
-                        </ListItemText>
-                    </ListItem>
-
-                    <hr/>
-
-                    <ListItem onClick={() => setOpenDrawer(false)}>
-                        <ListItemText>
-                            <Link
-                                className={classes.link}
-                                activeClass=""
                                 to="skills-innerRef"
                                 spy={false}
                                 smooth={true}
@@ -101,6 +83,25 @@ export default function DrawerComponent () {
                             >
                                 Skills
                             </Link>
+                        </ListItemText>
+                    </ListItem>
+
+                    <hr/>
+
+                    <ListItem onClick={() => setOpenDrawer(false)}>
+
+
+                        <ListItemText>
+                            <Link
+                                className={classes.link}
+                                activeClass=""
+                                to="project-innerRef"
+                                spy={true}
+                                smooth={true}
+                                offset={-0}
+                                duration={700}
+                                onClick={() => setOpenDrawer(false)}
+                            >Projects</Link>
                         </ListItemText>
                     </ListItem>
 
@@ -127,12 +128,19 @@ export default function DrawerComponent () {
                 </List>
             </SwipeableDrawer>
 
-            <IconButton onClick={() => setOpenDrawer(!openDrawer)} className={classes.icon}>
-                <MenuIcon
+            <IconButton onClick={() => setOpenDrawer(!openDrawer)} className={classes.icon}
+                        sx={{
+                            color: 'white',
+                            borderRadius: '0',
+                            top: 'auto', bottom: '0',
+                            paddingTop: '1em',
+                        }}
+                        disableRipple>
+                <Hamburger
+                    toggled={openDrawer}
+                    toggle={setOpenDrawer}
                     anchor={"right"}
-                    sx={{
-                        borderRadius: '0'
-                    }}
+
                 />
             </IconButton>
         </div>

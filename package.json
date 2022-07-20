@@ -29,16 +29,19 @@
     "body-parser": "^1.19.2",
     "concurrently": "^7.0.0",
     "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.1",
     "express": "^4.17.3",
     "express-session": "^1.17.2",
+    "hamburger-react": "^2.5.0",
+    "nodemailer": "^6.7.7",
     "parcel": "^2.4.1",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-router-dom": "^6.3.0",
     "react-scroll": "^1.8.6",
+    "react-toastify": "^9.0.5",
     "react-tsparticles": "^1.43.1",
-    "tsparticles-engine": "^2.0.0-beta.0",
-    "tsparticles-preset-links": "^1.43.1"
+    "tsparticles-engine": "^2.0.0-beta.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"

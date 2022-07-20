@@ -1,16 +1,16 @@
 import React from "react";
 import Particles from "react-tsparticles";
 
-export default function ParticlesContainer () {
+export function ParticlesContainer () {
     return (
             <Particles
                 id="tsparticles"
                 options={{
                     background: {
-                        color: "#261c2c"
+                        color: "#17121c"
                 },
                     fpsLimit: 30,
-                    fullScreen: { enable: false },
+                    fullScreen: { enable: true },
                     interactivity: {
                         detectsOn: "canvas",
                         events: {
@@ -21,16 +21,6 @@ export default function ParticlesContainer () {
                             resize: true,
                         },
                         modes: {
-                            grab: {
-                                distance: 70,
-                                links: {
-                                    enable: true,
-                                    distance: 120,
-                                    color: "#fff",
-                                    opacity: 0.2,
-                                    width: 1
-                                },
-                            },
                             repulse: {
                                 distance: 100,
                                 speed: 7,
@@ -46,17 +36,17 @@ export default function ParticlesContainer () {
                         },
                         number: {
                             density: {
-                                enable: true,
-                                area: 1000
+                                enable: false,
+                                area: 10
                             },
                             limit: 0,
-                            value: 150,
+                            value: 50,
                         },
                         opacity: {
                             animation: {
                                 enable: true,
                                 minimumValue: 0.05,
-                                speed: 5,
+                                speed: 0.5,
                                 sync: false
                             },
                             random: {
@@ -77,6 +67,8 @@ export default function ParticlesContainer () {
                         }
                     },
                 }
-            }/>
+                }
+            >
+            </Particles>
     );
 }

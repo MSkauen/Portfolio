@@ -7,112 +7,96 @@ export default function Skills () {
         <div className="skills">
             <div className="section">
                 <div className="skills-innerRef"/>
-                <h1>Skills</h1>
+                <h4>Skills</h4>
 
                 <div className="grid">
                     <div className="card">
-                        <h3>Front-end Development</h3>
+                        <h5>Front-end Development</h5>
                         <hr/>
 
                         <div className="skill-details">
                             <FadeInSection className="col" type={"fade-in"}>
-                                <span className={"img-label"}>React</span>
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
                                      alt="The logo icon for react" title="React"/>
+                                <span className={"img-label"}>React</span>
                             </FadeInSection>
 
                             <FadeInSection className="col" type={"fade-in-2"}>
-                                <span className={"img-label"}>JavaScript</span>
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
                                      alt="The logo icon for Javascript" title="JavaScript"/>
+                                <span className={"img-label"}>JavaScript</span>
                             </FadeInSection>
 
                             <FadeInSection className="col" type={"fade-in-3"}>
-                                <span className={"img-label"}>HTML</span>
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
                                      alt="The logo icon for HTML 5" title="HTML 5"/>
+                                <span className={"img-label"}>HTML</span>
                             </FadeInSection>
 
                             <FadeInSection className="col" type={"fade-in"}>
-                                <span className={"img-label"}>CSS</span>
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
                                      alt="The logo icon for CSS3" title="CSS 3"/>
-                            </FadeInSection>
-
-                            <FadeInSection className="col" type={"fade-in-2"}>
-                                <span className={"img-label"}>Bootstrap</span>
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain-wordmark.svg"
-                                     alt="The logo icon for Bootstrap" title="Bootstrap"/>
+                                <span className={"img-label"}>CSS</span>
                             </FadeInSection>
                         </div>
                     </div>
                     <div className="card">
-                            <h3>Back-end Development</h3>
+                            <h5>Back-end Development</h5>
                             <hr/>
 
                         <div className="skill-details">
                             <FadeInSection className="col" type={"fade-in"}>
-                                <span className={"img-label"}>Express</span>
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
                                      alt="The logo icon for Express" title="Express"/>
+                                <span className={"img-label"}>Express</span>
                             </FadeInSection>
 
                             <FadeInSection className="col" type={"fade-in-2"}>
-                                <span className={"img-label"}>jQuery</span>
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain-wordmark.svg"
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain.svg"
                                      alt="The logo icon for jQuery" title="jQuery"/>
+                                <span className={"img-label"}>jQuery</span>
                             </FadeInSection>
 
                             <FadeInSection className="col" type={"fade-in-3"}>
-                                <span className={"img-label"}>Mongo DB</span>
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
                                      alt="The logo icon for MongoDB" title="Mongo DB"/>
+                                <span className={"img-label"}>Mongo DB</span>
                             </FadeInSection>
 
                             <FadeInSection className="col" type={"fade-in"}>
-                                <span className={"img-label"}>MySQL</span>
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
-                                     alt="The logo icon for MySQL" title="MySQL"/>
-                            </FadeInSection>
-
-                            <FadeInSection className="col" type={"fade-in-2"}>
-                                <span className={"img-label"}>NPM</span>
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg"
-                                     alt="The logo icon for NPM" title="NPM"/>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                                     alt="The logo icon for PostgreSQL" title="PostgreSQL"/>
+                                <span className={"img-label"}>PostgreSQL</span>
                             </FadeInSection>
 
                             <FadeInSection className="col" type={"fade-in-3"}>
-                                <span className={"img-label"}>Node.JS</span>
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg"
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
                                      alt="The logo icon for NodeJS" title="Node JS"/>
-                            </FadeInSection>
-
-                            <FadeInSection className="col" type={"fade-in"}>
-                                <span className={"img-label"}>Heroku</span>
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original-wordmark.svg"
-                                     alt="The logo icon for Heroku" title="Heroku"/>
+                                <span className={"img-label"}>Node JS</span>
                             </FadeInSection>
 
                             <FadeInSection className="col" type={"fade-in-2"}>
-                                <span className={"img-label"}>Java</span>
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
                                      alt="The logo icon for Java" title="Java"/>
+                                <span className={"img-label"}>Java</span>
                             </FadeInSection>
                         </div>
                     </div>
                     <div className="card">
-                        <h3>Project management</h3>
+                        <h5>Project management</h5>
                         <hr/>
 
                         <div className="skill-details">
                             <FadeInSection className="col" type={"fade-in"}>
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
                                      alt="The logo icon for GitHub" title="GitHub"/>
+                                <span className={"img-label"}>Github</span>
                             </FadeInSection>
 
                             <FadeInSection className="col" type={"fade-in-3"}>
                                 <img src={Scrumwise_Logo}
                                      alt="The logo icon for Scrumwise" title="Scrumwise"/>
+                                <span className={"img-label"}>Scrumwise</span>
                             </FadeInSection>
                         </div>
                     </div>
