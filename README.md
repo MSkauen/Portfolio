@@ -21,11 +21,7 @@ Or check it out live at: http://mathiasharestad.no/
 * Create an about me section
 * Maybe create some CRUD operations?
     * Blog posts and/or comments?
-* Deploy
-    * Setup DNS target
-    * Cloudflare for ALIAS records
-    * NS change on domain registrar's DNS settings
-
+    
 ### UI/UX
 * Full web responsiveness (WIP)
     * Mobile, tablet, etc..
