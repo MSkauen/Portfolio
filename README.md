@@ -6,7 +6,7 @@
 
 This project is still under development, but feel free to install the project yourself.\
 
-Or check it out live at: http://mskauen-portfolio.herokuapp.com/
+Or check it out live at: http://mathiasharestad.no/
 
 ## How to run
 * Run command `` npm install ``
