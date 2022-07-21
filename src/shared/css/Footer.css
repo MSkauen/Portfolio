@@ -11,9 +11,7 @@
 }
 
 .hero-footer {
-    height: 200px;
-    position: absolute;
-    bottom: 0;
+
 }
 .down-arrow {
     filter: invert();

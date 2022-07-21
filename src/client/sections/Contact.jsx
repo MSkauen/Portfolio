@@ -10,7 +10,8 @@ export default function Contact () {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [body, setBody] = useState('');
-    const emailSuccess = () => toast("Email successfully sent! ");
+    const emailSuccess = () => toast("Email successfully sent!", {theme: "dark"});
+    const emailError = () => toast("Something went wrong, please try again! ", {theme: "dark"});
 
     const { handleSubmit: handleEmail, submitting, error } = useSubmit(
         async () => {
@@ -22,6 +23,9 @@ export default function Contact () {
         },
         () => emailSuccess(),
     );
+    if (error) {
+        emailError()
+    }
 
     return (
         <div className="contact">

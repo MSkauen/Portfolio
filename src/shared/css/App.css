@@ -126,10 +126,7 @@ body {
   align-items: center;
   width: 100%;
   max-height: 90%;
-  position: absolute;
-  top: 50%;
   left: 0%;
-  transform: translateY(-50%);
 }
 .text {
   width: auto;
@@ -156,6 +153,12 @@ body {
 }
 .hero {
   height: 100vh;
+  padding: 0 1em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  display: flex;
 }
 .skills .projects {
   border-radius: 25px;
@@ -173,7 +176,6 @@ body {
   display: flex;
 }
 
-.hero,
 .projects,
 .contact,
 .skills {
