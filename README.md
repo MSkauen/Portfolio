@@ -4,7 +4,7 @@
 
 ## Welcome!
 
-This project is still under development, but feel free to install the project yourself.\
+This project is still under development, but feel free to install the project yourself.
 
 Or check it out live at: http://mathiasharestad.no/
 
@@ -38,7 +38,7 @@ Or check it out live at: http://mathiasharestad.no/
 * Delete ``dist`` folder if changes are not appearing on page.
 * Deleting the ``.idea`` folder may also fix some issues.
 
-### Heroku
+### Heroku CLI
 Use ``heroku logs --tail -a <Heroku app name>`` to check heroku logs
 
 #### Noteable Errors
