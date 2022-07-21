@@ -7,11 +7,11 @@ export default function Skills () {
         <div className="skills">
             <div className="section">
                 <div className="skills-innerRef"/>
-                <h1>Skills</h1>
+                <h4>Skills</h4>
 
                 <div className="grid">
                     <div className="card">
-                        <h3>Front-end Development</h3>
+                        <h5>Front-end Development</h5>
                         <hr/>
 
                         <div className="skill-details">
@@ -41,7 +41,7 @@ export default function Skills () {
                         </div>
                     </div>
                     <div className="card">
-                            <h3>Back-end Development</h3>
+                            <h5>Back-end Development</h5>
                             <hr/>
 
                         <div className="skill-details">
@@ -83,7 +83,7 @@ export default function Skills () {
                         </div>
                     </div>
                     <div className="card">
-                        <h3>Project management</h3>
+                        <h5>Project management</h5>
                         <hr/>
 
                         <div className="skill-details">

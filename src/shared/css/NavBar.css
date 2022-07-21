@@ -20,7 +20,7 @@ ul {
 }
 
 #navbar{
-    z-index: 99;
+    z-index: 9999;
     background: -webkit-linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.31) 0%, rgba(0,0,0,0.001) 80%);
     background: -moz-linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.31) 0%, rgba(0,0,0,0.001) 80%);
     background: -ms-linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.31) 0%, rgba(0,0,0,0.001) 80%);

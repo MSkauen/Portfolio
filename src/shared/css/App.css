@@ -4,19 +4,20 @@
   padding: 0;
 }
 body {
-  background-color: #261C2C;
+  background-color: #100c12;
 }
 span {
   font-family: "Space Mono", serif;
 }
-h1 {
+h1, h2 {
+  font-size: 3em;
+}
+h1, h2, h4 {
   font-family: "Space Mono Bold", serif;
   color: white;
-  font-size: 3em;
   text-shadow: rgb(0 0 0) 0 2px 4px;
-
 }
-h2 {
+h3 {
   font-family: "Space Mono", serif;
   color: #c3c3c3;
   margin: 2em 0 2em 0;
@@ -24,11 +25,11 @@ h2 {
   font-weight: 400;
   font-size: 1em;
 }
-.contact h2 {
+.contact h3 {
   font-size: 2em;
   margin: 0;
 }
-h3 {
+h5 {
   font-family: "Space Mono", serif;
   color: #c3c3c3;
   letter-spacing: 0.2em;
@@ -177,7 +178,7 @@ body {
 .contact,
 .skills {
   min-height: 100vh;
-  padding: 0 3em;
+  padding: 0 1em;
   /*background-color: #261c2c;*/
   flex-direction: row;
   justify-content: center;
@@ -201,13 +202,14 @@ body {
   position: relative;
   flex-direction: column;
 }
-.section h1 {
+.section h4 {
+  font-size: 2.5em;
   letter-spacing: 0.2em;
   font-weight: 400;
   font-family: "Space Mono", serif;
   margin: 1em 0;
 }
-.section h1:after {
+.section h4:after {
   content: "()";
   color: #6e85b2;
   font-family: sans-serif;
@@ -235,12 +237,10 @@ body {
   flex-direction: column;
   row-gap: 1em;
 }
-.card h3, .img-label {
+.card h5, .img-label {
   pointer-events: all;
 }
 .project-card .card:hover {
-  opacity: .5;
-  filter: blur(2px);
   background: #3e2c3e4d;
   transition: 0.22s ease-in-out;
 }
@@ -289,10 +289,10 @@ body {
 .contact-card {
   pointer-events: auto;
   display: flex;
+  height: 70%;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 70%;
   transition: 0.16s ease-in-out;
   border-radius: 5px;
   box-shadow: 0 6px 18px 3px #0000001f;
@@ -326,6 +326,8 @@ body {
 }
 .project-label {
   margin-top: 2em;
+  padding: 0 1em;
+  text-align: center;
 }
 .particle-wrapper {
   z-index: -10;
@@ -441,10 +443,10 @@ body {
 
 /* MOBILE */
 @media (min-width: 320px) and (max-width: 480px) {
-  h2 {
+  h3 {
     margin: 2em 0.3em;
   }
-  h3 {
+  h5 {
     margin: 10px 1em 0;
   }
   #toolbar svg {
@@ -473,6 +475,9 @@ body {
   .text-zone h1 {
     font-size: clamp(20px, 10vw, 80px);
   }
+  .text-zone h2 {
+    font-size: clamp(20px, 6vw, 80px);
+  }
   .text {
     text-align: left;
   }
@@ -489,6 +494,7 @@ body {
     height: 100%;
   }
   .project-card {
+    text-align: center;
     height: 100%;
   }
   .project-grid {
@@ -515,13 +521,16 @@ body {
     width: 100%;
   }
   .skills,
-  .projects,
-  .contact {
+  .projects {
     padding-bottom: 30vh;
     height: 100%;
   }
   .col {
     padding: 1em 1em;
+  }
+  .contact-card {
+    width: 100%;
+    padding: 2em 0 0;
   }
 }
 

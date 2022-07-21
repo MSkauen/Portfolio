@@ -28,10 +28,10 @@ app.use((req, res, next) => {
     }
 });
 
-//EMAIL SETUP
+// Mail server setup
 const transporter = nodemailer.createTransport({
-    host: "send.one.com",
-    port: 465,
+    host: process.env.MAIL_HOST,
+    port: process.env.MAIL_PORT,
     secure: true,
     auth: {
         user: process.env.MAIL_ADDRESS,
@@ -43,18 +43,18 @@ const transporter = nodemailer.createTransport({
     },
 });
 
-// verify connection configuration
+// Verify mail server connection configuration
 transporter.verify(function(error, success) {
     if (error) {
         console.log(error);
     } else {
-        console.log("Server is ready to take our messages");
+        console.log("Mail Server at: " + process.env.MAIL_HOST + " using port " + process.env.MAIL_PORT + " is ready");
     }
 });
 
 app.post('/api/mail', (req, res) => {
     let name = req.body.name
-    let email = "mathias.skauen.harestad@gmail.com"
+    let email = process.env.MAIL_RECIEVER
     let message = req.body.message
 
     let mail = {

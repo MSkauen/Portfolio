@@ -13,18 +13,18 @@ export default function Projects () {
         <div className="projects">
             <div className="section">
                 <div className="project-innerRef"/>
-                <h1>Projects</h1>
+                <h4>Projects</h4>
 
                 {isMobile ? (
                     <div className="grid">
                         <div className="project-card">
                             <div className="card">
-                                <h3>Working Class Tattoo</h3>
+                                <h5>Working Class Tattoo</h5>
                                 <hr/>
                                 <div className="project-details">
                                     <img src={wcts} alt="Working Class Tattoo Shop"/>
                                     <span className="project-label ">
-                                        React, Node.JS, Express, MongoDB, AWS
+                                        React, Node.JS, Express, MongoDB, AWS, REST
                                     </span>
                                 </div>
                                 <div className="row call-to-action">
@@ -56,12 +56,12 @@ export default function Projects () {
                     <div className="grid">
                         <div className="project-card">
                             <div className="card">
-                                <h3>WCTS Homepage + CRM</h3>
+                                <h5>WCTS Homepage + CRM</h5>
                                 <hr/>
                                 <div className="project-details">
                                     <img src={wcts} alt="Working Class Tattoo Shop"/>
                                     <span className="project-label ">
-                                        React, Node.JS, Express, MongoDB, AWS
+                                        React, Node.JS, Express, MongoDB, AWS, REST
                                     </span>
                                 </div>
                             </div>

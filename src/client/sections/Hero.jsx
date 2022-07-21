@@ -16,11 +16,11 @@ export default function Hero () {
                     </FadeInSection>
 
                     <FadeInSection className="text" type={"fade-in"}>
-                        <h1>I create web solutions</h1>
+                        <h2>I create web solutions</h2>
                     </FadeInSection>
                 </div>
                 <div>
-                    <h2>Frontend / Backend Developer</h2>
+                    <h3>Frontend / Backend Developer</h3>
                     <div className="row call-to-action">
 
                         <a href="https://github.com/MSkauen" title="Github">

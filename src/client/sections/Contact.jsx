@@ -27,10 +27,10 @@ export default function Contact () {
         <div className="contact">
             <div className="section">
                 <div className="contact-innerRef"/>
-                <h1>Contact</h1>
+                <h4>Contact</h4>
 
                 <div className="contact-card">
-                    <h3>Get In Touch</h3>
+                    <h5>Get In Touch</h5>
                     <hr/>
 
                     <form className="contact-form" action="" method="post" encType="text/plain">
