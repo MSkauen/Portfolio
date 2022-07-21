@@ -312,7 +312,6 @@ body {
 .project-details > img {
   width: 100%;
   max-height: 12em;
-  opacity: 84%;
 }
 .skill-details img {
   pointer-events: auto;
@@ -527,6 +526,9 @@ body {
   }
   .col {
     padding: 1em 1em;
+  }
+  .contact {
+    padding-bottom: 30vh;
   }
   .contact-card {
     width: 100%;
