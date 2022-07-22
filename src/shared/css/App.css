@@ -217,6 +217,7 @@ body {
   font-family: sans-serif;
 }
 .contact-form {
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -337,7 +338,7 @@ body {
 .skills-innerRef,
 .contact-innerRef {
   position: relative;
-  top: -5em;
+  top: -1em;
 }
 .btn {
   text-decoration: none;
@@ -523,7 +524,7 @@ body {
   }
   .skills,
   .projects {
-    padding-bottom: 30vh;
+    padding-bottom: 10vh;
     height: 100%;
   }
   .col {
@@ -572,7 +573,7 @@ body {
 /* SMALL SCREENS, LAPTOPS */
 @media (min-width: 769px) and (max-width: 1224px) {
   .card {
-    width: auto;
+    width: 100%;
   }
 }
 

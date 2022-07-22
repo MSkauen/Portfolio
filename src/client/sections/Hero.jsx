@@ -23,7 +23,7 @@ export default function Hero () {
                     <h3>Frontend / Backend Developer</h3>
                     <div className="row call-to-action">
 
-                        <a href="https://github.com/MSkauen" title="Github">
+                        <a href="https://github.com/MSkauen" title="Github" target="_blank" rel="noopener noreferrer">
                             <button className="btn">
                                 <img className="logo" src={githubLogo} alt="Github"/>
                                 <img className="mark" src={githubMark} alt="GitHub Logo"/>

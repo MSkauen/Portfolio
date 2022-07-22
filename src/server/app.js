@@ -47,8 +47,8 @@ const transporter = nodemailer.createTransport({
 transporter.verify(function(error, success) {
     if (error) {
         console.log(error);
-    } else {
-        console.log("Mail Server at: " + process.env.MAIL_HOST + " using port " + process.env.MAIL_PORT + " is ready");
+    } else if (success) {
+        console.log("Mail Server at host: '" + process.env.MAIL_HOST + "' using port '" + process.env.MAIL_PORT + "' is ready");
     }
 });
 
@@ -63,6 +63,7 @@ app.post('/api/mail', (req, res) => {
         subject: name,
         text: message
 }
+    // Throttle calls using date or uuid's here...
 
     transporter.sendMail(mail, (err, data) => {
         if (err) {

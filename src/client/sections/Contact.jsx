@@ -39,7 +39,7 @@ export default function Contact () {
 
                     <form className="contact-form" action="" method="post" encType="text/plain">
                             <InputField type="text" name="name" id="name" placeholder="Name" onChangeValue={setEmail}/>
-                            <InputField type="text" name="email" id="email" placeholder="Enter email" onChangeValue={setName}/>
+                            <InputField type="text" name="email" id="email" placeholder="Your email" onChangeValue={setName}/>
                             <InputField multiLine={true} name="message" rows="12" cols="35" placeholder="..." onChangeValue={setBody}/>
                     </form>
                         <button onClick={handleEmail} className="btn">
