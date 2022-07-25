@@ -33,36 +33,38 @@ const transporter = nodemailer.createTransport({
     host: process.env.MAIL_HOST,
     port: process.env.MAIL_PORT,
     secure: false,
+    tls: {
+        ciphers: "SSLv3"
+    },
     auth: {
         user: process.env.MAIL_ADDRESS,
         pass: process.env.MAIL_PWD
     },
-    tls: {
-        // do not fail on invalid certs
-        rejectUnauthorized: false,
-    },
+    from: process.env.MAIL_ADDRESS,
 });
 
 // Verify mail server connection configuration
 transporter.verify(function(error, success) {
     if (error) {
         console.log(error);
-    } else {
-        console.log("Mail Server at: " + process.env.MAIL_HOST + " using port " + process.env.MAIL_PORT + " is ready");
+    } else if (success) {
+        console.log("Mail Server at host: '" + process.env.MAIL_HOST + "' using port '" + process.env.MAIL_PORT + "' is ready");
     }
 });
 
 app.post('/api/mail', (req, res) => {
     let name = req.body.name
-    let email = process.env.MAIL_RECIEVER
+    let email = req.body.email
     let message = req.body.message
+    let emailTo = process.env.MAIL_RECIEVER
 
     let mail = {
         from: 'noreply@mathiasharestad.no',
-        to: email,
+        to: emailTo,
         subject: name,
-        text: message
+        text: message + " \n" + "Contact info: " + email
 }
+    // Throttle calls using date or uuid's here...
 
     transporter.sendMail(mail, (err, data) => {
         if (err) {

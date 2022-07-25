@@ -81,7 +81,7 @@ export default function DrawerComponent () {
                                 duration={500}
                                 onClick={() => setOpenDrawer(false)}
                             >
-                                Skills
+                                Tools
                             </Link>
                         </ListItemText>
                     </ListItem>

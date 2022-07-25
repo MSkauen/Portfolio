@@ -1,9 +1,7 @@
 import React from "react";
 import wcts from "../../shared/img/wcts_landing.webp";
-
 import OpenNewTab from "../../shared/img/open_new_tab.svg";
 import githubMark from "../../shared/img/GitHub-Mark-Light-64px.png";
-import { Link } from "react-scroll";
 import {useMediaQuery} from "@mui/material";
 
 export default function Projects () {
@@ -19,35 +17,25 @@ export default function Projects () {
                     <div className="grid">
                         <div className="project-card">
                             <div className="card">
-                                <h5>Working Class Tattoo</h5>
+                                <h5>WCTS Homepage, CRM+CMS</h5>
                                 <hr/>
                                 <div className="project-details">
                                     <img src={wcts} alt="Working Class Tattoo Shop"/>
                                     <span className="project-label ">
-                                        React, Node.JS, Express, MongoDB, AWS, REST
+                                        Jest, React, Node.JS, Express, MongoDB, AWS, REST
                                     </span>
                                 </div>
                                 <div className="row call-to-action">
 
-
-                                    <a href="https://github.com/MSkauen">
-                                        <button className="btn" title="Github Repository">
+                                        <button disabled className="btn" title="Github Repository">
                                             <img className="small-icon" src={githubMark} alt="GitHub Logo"/>
                                         </button>
-                                    </a>
 
-                                    <Link
-                                        activeClass=""
-                                        to="contact-innerRef"
-                                        spy={true}
-                                        smooth={true}
-                                        offset={-0}
-                                        duration={700}
-                                    >
+                                    <a href="https://wcts.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                                         <button className="btn" title="Live view">
                                             <img className="small-icon" src={OpenNewTab} alt="Open live website"/>
                                         </button>
-                                    </Link>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -56,12 +44,12 @@ export default function Projects () {
                     <div className="grid">
                         <div className="project-card">
                             <div className="card">
-                                <h5>WCTS Homepage + CRM</h5>
+                                <h5>WCTS Homepage, CRM+CMS</h5>
                                 <hr/>
                                 <div className="project-details">
                                     <img src={wcts} alt="Working Class Tattoo Shop"/>
                                     <span className="project-label ">
-                                        React, Node.JS, Express, MongoDB, AWS, REST
+                                        Jest, React, Node.JS, Express, MongoDB, AWS, REST
                                     </span>
                                 </div>
                             </div>
@@ -72,7 +60,7 @@ export default function Projects () {
                                         <img className="small-icon" src={githubMark} alt="GitHub Logo"/>
                                     </button>
 
-                                <a href="https://wcts.herokuapp.com/">
+                                <a href="https://wcts.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                                     <button className="btn" title="Live view">
                                         <img className="small-icon" src={OpenNewTab} alt="Open live website"/>
                                     </button>

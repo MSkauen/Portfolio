@@ -62,18 +62,6 @@ function Navbar () {
                                     <li className="nav-item">
                                         <Link
                                             activeClass=""
-                                            to="skills-innerRef"
-                                            spy={true}
-                                            smooth={true}
-                                            offset={0}
-                                            duration={700}
-                                        >
-                                            Skills
-                                        </Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link
-                                            activeClass=""
                                             to="project-innerRef"
                                             spy={true}
                                             smooth={true}
@@ -81,6 +69,19 @@ function Navbar () {
                                             duration={700}
                                         >
                                             Projects
+                                        </Link>
+                                    </li>
+
+                                    <li className="nav-item">
+                                        <Link
+                                            activeClass=""
+                                            to="skills-innerRef"
+                                            spy={true}
+                                            smooth={true}
+                                            offset={0}
+                                            duration={700}
+                                        >
+                                            Tools
                                         </Link>
                                     </li>
 

@@ -56,10 +56,11 @@ textarea {
 }
 hr {
   width: 80%;
-  border: 1px solid #6E85B2;
+  background-color: rgb(110, 133, 178);
+  border: 1px solid #6e85b2;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 3px 1px #6e85b23b;
   margin-bottom: 1em;
+  -webkit-box-shadow: 0 2px 2px 0px #6e85b23b;
 }
 body {
   overflow-x: hidden;
@@ -217,6 +218,7 @@ body {
   font-family: sans-serif;
 }
 .contact-form {
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -292,6 +294,7 @@ body {
   pointer-events: auto;
   display: flex;
   height: 70%;
+  width: 480px;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
@@ -337,7 +340,7 @@ body {
 .skills-innerRef,
 .contact-innerRef {
   position: relative;
-  top: -5em;
+  top: -1em;
 }
 .btn {
   text-decoration: none;
@@ -474,16 +477,19 @@ body {
     text-align: center;
   }
   .text-zone h1 {
-    font-size: clamp(20px, 10vw, 80px);
+    font-size: clamp(20px, 14vw, 80px);
   }
   .text-zone h2 {
-    font-size: clamp(20px, 6vw, 80px);
+    font-size: clamp(20px, 9vw, 80px);
   }
   .text {
     text-align: left;
   }
   .sub-title {
     font-size: clamp(10px, 7vw, 80px);
+  }
+  .call-to-action {
+    justify-content: space-evenly;
   }
   .call-to-action a {
     width: 40%;
@@ -523,7 +529,7 @@ body {
   }
   .skills,
   .projects {
-    padding-bottom: 30vh;
+    padding-bottom: 10vh;
     height: 100%;
   }
   .col {
@@ -572,7 +578,7 @@ body {
 /* SMALL SCREENS, LAPTOPS */
 @media (min-width: 769px) and (max-width: 1224px) {
   .card {
-    width: auto;
+    width: 100%;
   }
 }
 

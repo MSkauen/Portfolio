@@ -7,7 +7,7 @@ export default function Skills () {
         <div className="skills">
             <div className="section">
                 <div className="skills-innerRef"/>
-                <h4>Skills</h4>
+                <h4>Tools</h4>
 
                 <div className="grid">
                     <div className="card">
