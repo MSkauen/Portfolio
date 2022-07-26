@@ -79,6 +79,7 @@ export default function Contact () {
                                    label="Name"
                                    margin="normal"
                                    name="name"
+                                   onBlur={formik.handleBlur}
                                    onChange={formik.handleChange}
                                    value={formik.values.name}
                                    variant="outlined"
@@ -90,6 +91,7 @@ export default function Contact () {
                                    label="Email"
                                    margin="normal"
                                    name="email"
+                                   onBlur={formik.handleBlur}
                                    onChange={formik.handleChange}
                                    value={formik.values.email}
                                    variant="outlined"
@@ -101,6 +103,7 @@ export default function Contact () {
                                    label="Message"
                                    margin="normal"
                                    name="message"
+                                   onBlur={formik.handleBlur}
                                    onChange={formik.handleChange}
                                    value={formik.values.message}
                                    variant="outlined"
@@ -114,7 +117,7 @@ export default function Contact () {
                         <SendRoundedIcon height="50%"/>
                     </button>
 
-                    <ToastContainer />
+                    <ToastContainer position="bottom-center"/>
                 </div>
             </div>
         </div>
