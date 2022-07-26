@@ -1,6 +1,6 @@
 import React from "react";
 
-export function InputField({ id, onChangeValue, value, name, type, placeholder, multiLine, cols, rows }) {
+export function InputField({ id, onChangeValue, value, name, type, placeholder, multiLine, cols, rows, error, onBlur }) {
   return (
       <>
         {multiLine ? (
@@ -11,6 +11,7 @@ export function InputField({ id, onChangeValue, value, name, type, placeholder, 
                 value={value}
                 name={name}
                 placeholder={placeholder}
+                onBlur={onBlur}
                 onChange={(e) => onChangeValue(e.target.value)}
                 required
             />
@@ -21,6 +22,8 @@ export function InputField({ id, onChangeValue, value, name, type, placeholder, 
                 name={name}
                 value={value}
                 placeholder={placeholder}
+                error={error}
+                onBlur={onBlur}
                 onChange={(e) => onChangeValue(e.target.value)}
                 required
             />

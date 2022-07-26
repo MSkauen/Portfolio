@@ -1,9 +1,7 @@
 import React from "react";
 import wcts from "../../shared/img/wcts_landing.webp";
-
 import OpenNewTab from "../../shared/img/open_new_tab.svg";
 import githubMark from "../../shared/img/GitHub-Mark-Light-64px.png";
-import { Link } from "react-scroll";
 import {useMediaQuery} from "@mui/material";
 
 export default function Projects () {
@@ -19,7 +17,7 @@ export default function Projects () {
                     <div className="grid">
                         <div className="project-card">
                             <div className="card">
-                                <h5>WCTS Homepage + CRM/CMS</h5>
+                                <h5>WCTS Homepage, CRM+CMS</h5>
                                 <hr/>
                                 <div className="project-details">
                                     <img src={wcts} alt="Working Class Tattoo Shop"/>
@@ -46,7 +44,7 @@ export default function Projects () {
                     <div className="grid">
                         <div className="project-card">
                             <div className="card">
-                                <h5>WCTS Homepage + CRM/CMS</h5>
+                                <h5>WCTS Homepage, CRM+CMS</h5>
                                 <hr/>
                                 <div className="project-details">
                                     <img src={wcts} alt="Working Class Tattoo Shop"/>

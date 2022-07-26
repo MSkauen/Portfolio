@@ -53,9 +53,10 @@ ul {
     letter-spacing: 0.130556em;
     float: left;
 }
-.nav-item:hover {
+.nav-item:hover a {
     cursor: pointer;
-    color: #bebebe;
+    color: #6e85b2;
+    transition: 0.16s ease-out;
 }
 
 @media (max-width: 960px) {

@@ -18,6 +18,7 @@
 }
 #drawer a:hover {
     cursor: pointer;
+    color: #6e85b2;
 }
 @media (min-width: 320px) and (max-width: 480px) {
     #drawer .MuiPaper-root {
