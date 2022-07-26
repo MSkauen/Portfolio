@@ -7,18 +7,18 @@ body {
   background-color: #100c12;
 }
 span {
-  font-family: "Space Mono", serif;
+  font-family: "Roboto Mono", serif;
 }
-h1, h2 {
-  font-size: 3em;
+h2 {
+   font-size: clamp(20px, 5vw, 60px);
 }
 h1, h2, h4 {
-  font-family: "Space Mono Bold", serif;
+  font-family: "Roboto Mono", serif;
   color: white;
   text-shadow: rgb(0 0 0) 0 2px 4px;
 }
 h3 {
-  font-family: "Space Mono", serif;
+  font-family: "Roboto Mono", serif;
   color: #c3c3c3;
   margin: 2em 0 2em 0;
   letter-spacing: 0.3em;
@@ -30,7 +30,7 @@ h3 {
   margin: 0;
 }
 h5 {
-  font-family: "Space Mono", serif;
+  font-family: "Roboto Mono", serif;
   color: #c3c3c3;
   letter-spacing: 0.2em;
   font-size: 1.3em;
@@ -64,6 +64,9 @@ hr {
 }
 body {
   overflow-x: hidden;
+}
+.parallax-element {
+  position: absolute;
 }
 #tsparticles {
   pointer-events: none;
@@ -106,7 +109,7 @@ body {
 .col {
   -webkit-box-shadow: 0 6px 18px 3px rgba(0, 0, 0, 0.12);
   box-shadow: 0 6px 18px 3px rgba(0, 0, 0, 0.12);
-  background: #3e2c3e73;
+  background: #251b26;
   pointer-events: all;
   cursor: pointer;
   width: 5em;
@@ -117,7 +120,7 @@ body {
   display: flex;
 }
 .col:hover {
-  background: #3e2c3e4d;
+  background: #1e1520;
 }
 .text-zone {
   display: flex;
@@ -126,6 +129,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  text-align: center;
   max-height: 90%;
   left: 0%;
 }
@@ -245,7 +249,7 @@ body {
   pointer-events: all;
 }
 .project-card .card:hover {
-  background: #3e2c3e4d;
+  background: #1e1520;
   transition: 0.22s ease-in-out;
 }
 .skill-details {
@@ -281,9 +285,10 @@ body {
   pointer-events: all;
 }
 .projects .card {
-  background: #3e2c3e73;
+  background: #251b26;
   width: 100%;
-  padding: 2em 0;
+  padding-top: 2em;
+  padding-bottom: 0;
   pointer-events: all;
   box-shadow: 0 6px 18px 3px #0000001f;
 }
@@ -301,8 +306,8 @@ body {
   transition: 0.16s ease-in-out;
   border-radius: 5px;
   box-shadow: 0 6px 18px 3px #0000001f;
-  background: #3e2c3e4d;
-  padding: 2em;
+  background: #1e1520;
+  padding: 2em 0;
   row-gap: 1em;
 }
 .grid {
@@ -323,14 +328,26 @@ body {
   width: 4em;
   transition: 0.16s ease-out;
 }
+code {
+  background-color: #1a131b;
+  border-radius: 3px;
+  display: inline-block;
+  font-family: "Roboto Mono Thin", sans-serif;
+  font-weight: 300;
+  margin: 0.4em 0.4em;
+  padding: 0.4em .8em;
+
+  line-height: 1.5;
+
+  color: #fff;
+  font-size: .8em;
+}
 .img-label, .project-label {
-  margin-bottom: 5px;
   color: white;
   font-weight: 100;
 }
 .project-label {
-  margin-top: 2em;
-  padding: 0 1em;
+  padding: 1em;
   text-align: center;
 }
 .particle-wrapper {
@@ -446,7 +463,7 @@ body {
 }
 
 /* MOBILE */
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 580px) {
   h3 {
     margin: 2em 0.3em;
   }
@@ -469,12 +486,17 @@ body {
   .projects > .btn img {
     width: 3em;
   }
+  .projects .card {
+    padding-bottom: 2em;
+  }
   .hero-card h1 {
     letter-spacing: normal;
     padding: 1em 0;
   }
   .text-zone {
     text-align: center;
+    align-items: center;
+    width: 100%;
   }
   .text-zone h1 {
     font-size: clamp(20px, 14vw, 80px);
@@ -512,6 +534,7 @@ body {
     row-gap: 2em;
   }
   .project-label {
+    padding-bottom: 0;
     text-align: center;
   }
   .card {
@@ -571,9 +594,17 @@ body {
   }
 }
 
-/* TABLETS */
+/* TABLETS
 @media (min-width: 481px) and (max-width: 768px) {
+  .hero {
+    align-items: center;
+  }
+  .text-zone {
+    width: 100%;
+    align-items: center;
+  }
 }
+*/
 
 /* SMALL SCREENS, LAPTOPS */
 @media (min-width: 769px) and (max-width: 1224px) {
@@ -594,8 +625,19 @@ body {
 @font-face {
   font-family: "Space Mono Bold";
   src: local("Space Mono"), url(fonts/SpaceMono-Bold.ttf) format("ttf"),
-    local("Space Mono"), url(fonts/SpaceMono-Bold.woff) format("woff");
+  local("Space Mono"), url(fonts/SpaceMono-Bold.woff) format("woff");
 }
+@font-face {
+  font-family: "Roboto Mono";
+  src: local("Roboto Mono"), url(fonts/RobotoMono-Regular.ttf) format("ttf"),
+  local("Roboto Mono"), url(fonts/RobotoMono-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: "Roboto Mono Thin";
+  src: local("Roboto Mono"), url(fonts/Roboto-Thin.ttf) format("ttf"),
+  local("Roboto Mono"), url(fonts/Roboto-Thin.woff) format("woff");
+}
+
 @keyframes flicker {
   0% {
     filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.6));

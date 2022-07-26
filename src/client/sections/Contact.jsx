@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import SendRoundedIcon from "@mui/icons-material/SendRounded";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -11,6 +11,10 @@ import {TextField} from "@mui/material";
 
 const useStyles = makeStyles({
     root: {
+        "& input:-internal-autofill-selected": {
+            '-webkit-box-shadow': '0 0 0 100px #3e2c3e inset',
+            '-webkit-text-fill-color': '#c3c3c3'
+        },
         "& .MuiFormLabel-root": {
             color: "#c3c3c3",
             borderWidth: '2px',
@@ -70,6 +74,7 @@ export default function Contact () {
             });
         },
         () => {
+            formik.resetForm();
             emailSuccess();
         },
     );
@@ -130,7 +135,6 @@ export default function Contact () {
                                    onChange={formik.handleChange}
                                    value={formik.values.name}
                                    variant="outlined"
-                                   fullWidth
                         />
 
                         <TextField className={classes.root}
@@ -143,7 +147,6 @@ export default function Contact () {
                                    onChange={formik.handleChange}
                                    value={formik.values.email}
                                    variant="outlined"
-                                   fullWidth
                         />
 
                         <TextField className={classes.root}
@@ -157,8 +160,7 @@ export default function Contact () {
                                    value={formik.values.message}
                                    variant="outlined"
                                    multiline
-                                   fullWidth
-                                   rows={7}
+                                   rows={5}
                         />
 
                     </form>
