@@ -1,82 +1,18 @@
-import React, {useState} from "react";
-import SendRoundedIcon from "@mui/icons-material/SendRounded";
-import { ToastContainer, toast } from 'react-toastify';
+import React from "react";
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import {emailSuccess, emailError, emailSubmitting} from "../lib/toasts";
 import {useSubmit} from "../lib/useSubmit";
 import {postJson} from "../lib/http";
+import {useStyles} from "../lib/inputStyle";
+import {TextField} from "@mui/material";
+import SendRoundedIcon from "@mui/icons-material/SendRounded";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import { makeStyles } from "@material-ui/core/styles";
-import {TextField} from "@mui/material";
-
-const useStyles = makeStyles({
-    root: {
-        "& .MuiFormLabel-root": {
-            color: "#c3c3c3",
-            borderWidth: '2px',
-        },
-        '& label.Mui-focused': {
-            color: 'white',
-            borderWidth: '2px',
-        },
-        '& .MuiInput-underline:after': {
-            borderBottomColor: 'yellow',
-            borderWidth: '2px',
-        },
-        '& .MuiOutlinedInput-root': {
-            color: 'white',
-
-            '& fieldset': {
-                borderColor: '#6e85b2',
-                borderWidth: '2px',
-            },
-            '&:hover fieldset': {
-                borderColor: '#525252',
-                borderWidth: '2px',
-            },
-            '&.Mui-focused fieldset': {
-                borderColor: '#6e85b2',
-                borderWidth: '2px',
-            },
-        },
-    }});
 
 export default function Contact () {
-    const classes = useStyles();
-
     const toastId = React.useRef(null);
-
-    const emailSubmitting = () => toastId.current = toast("Please wait", {theme: "dark", autoClose: 5000});
-    const emailError = () => {
-        toast.update(toastId.current, {
-            render: "Something went wrong, please try again!",
-            type: toast.TYPE.ERROR
-        })
-    }
-    const emailSuccess = () => {
-        toast.update(toastId.current, {
-            render: "Email successfully sent!",
-            type: toast.TYPE.SUCCESS
-        })
-    }
-
-    const { handleSubmit: handleEmail, submitting, error } = useSubmit(
-        async () => {
-            emailSubmitting();
-            await postJson("/api/mail",  {
-                name: formik.values.name,
-                email: formik.values.email,
-                message: formik.values.body,
-            });
-        },
-        () => {
-            emailSuccess();
-        },
-    );
-
-    if (error) {
-        emailError()
-    }
+    const classes = useStyles();
 
     const formik = useFormik({
         initialValues: {
@@ -104,9 +40,27 @@ export default function Contact () {
                     'You cannot send an empty message')
         }),
         onSubmit: () => {
-            //This should be optional Formik team... Please fix!
+            //This should be optional... Please fix!
         }
     });
+
+    const { handleSubmit: handleEmail, submitting, error } = useSubmit(
+        async () => {
+            emailSubmitting(toastId);
+            await postJson("/api/mail",  {
+                name: formik.values.name,
+                email: formik.values.email,
+                message: formik.values.message,
+            });
+        },
+        () => {
+            emailSuccess(toastId);
+        },
+    );
+
+    if (error) {
+        emailError(toastId)
+    }
 
     return (
         <div className="contact">
@@ -119,18 +73,15 @@ export default function Contact () {
                     <hr/>
 
                     <form className="contact-form" action="" method="post" encType="text/plain">
-
                         <TextField className={classes.root}
                                    error={Boolean(formik.touched.name && formik.errors.name)}
                                    helperText={formik.touched.name && formik.errors.name}
                                    label="Name"
                                    margin="normal"
                                    name="name"
-                                   onBlur={formik.handleBlur}
                                    onChange={formik.handleChange}
                                    value={formik.values.name}
                                    variant="outlined"
-                                   fullWidth
                         />
 
                         <TextField className={classes.root}
@@ -139,11 +90,9 @@ export default function Contact () {
                                    label="Email"
                                    margin="normal"
                                    name="email"
-                                   onBlur={formik.handleBlur}
                                    onChange={formik.handleChange}
                                    value={formik.values.email}
                                    variant="outlined"
-                                   fullWidth
                         />
 
                         <TextField className={classes.root}
@@ -152,20 +101,19 @@ export default function Contact () {
                                    label="Message"
                                    margin="normal"
                                    name="message"
-                                   onBlur={formik.handleBlur}
                                    onChange={formik.handleChange}
                                    value={formik.values.message}
                                    variant="outlined"
                                    multiline
-                                   fullWidth
                                    rows={7}
                         />
-
                     </form>
-                        <button onClick={handleEmail} disabled={!formik.isValid || !formik.dirty || submitting}
-                                className="btn">
-                            <SendRoundedIcon height="50%"/>
-                        </button>
+
+                    <button onClick={handleEmail} disabled={!formik.isValid || !formik.dirty || submitting}
+                            className="btn">
+                        <SendRoundedIcon height="50%"/>
+                    </button>
+
                     <ToastContainer />
                 </div>
             </div>

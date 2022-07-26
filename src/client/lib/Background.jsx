@@ -14,7 +14,7 @@ export default function Background (props) {
     return  <div className="background-wrapper">
         <img src={props.src} className={props.classes} alt=""
              style={{
-                 transform: `translateY(${(offsetY + props.extraOffsetY) * 0.3}px) scale(${props.scale})`
+                 transform: `translateY(${(offsetY + props.extraOffsetY) * props.speed}px) scale(${props.scale})`
              }}/>
     </div>
 }

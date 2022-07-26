@@ -10,26 +10,17 @@
     text-decoration: none;
 }
 
-.hero-footer {
-
-}
 .down-arrow {
-    filter: invert();
-    z-index: 999;
-    width: 250px;
-    height: 190px;
     transition: 0.22s ease-in-out;
 }
 .down-arrow:hover {
-    transition: 0.12s ease-in-out;
+    transition: 0.16s ease-in-out;
     opacity: 0.5;
-    mix-blend-mode: soft-light;
     cursor: pointer;
-    transform: scaleX(1.1) translateY(5px);
 }
 /* MOBILE */
 @media (min-width: 320px) and (max-width: 480px) {
     .footer {
-        padding: 0em 1em 2em 1em;
+        padding: 0 1em 2em 1em;
     }
 }

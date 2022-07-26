@@ -1,23 +1,24 @@
 import React from "react";
 import { Link } from "react-scroll";
-import FadeInSection from "../lib/FadeInSection";
 import SendRoundedIcon from "@mui/icons-material/SendRounded";
 import githubLogo from "../../shared/img/GitHub_Logo_White.png";
 import githubMark from "../../shared/img/GitHub-Mark-Light-64px.png";
-import leftArrow from "../../shared/img/down_arrow.webp";
+import {Parallax} from "react-scroll-parallax";
+import cloud_1 from "url:../../shared/img/background/cloud_1.webp";
 
 export default function Hero () {
     return (
         <div className="hero">
+
             <div className="text-zone">
                 <div>
-                        <h1 className="name">Mathias Skauen Harestad</h1>
+                    <h1 className="name">Mathias Skauen Harestad</h1>
 
-                        <h2>I create web solutions</h2>
+                    <h2>I create web solutions</h2>
                 </div>
                 <div>
                     <h3>Frontend / Backend Developer</h3>
-                    <div className="row call-to-action">
+                    <div className="row call-to-action-hero">
 
                         <a href="https://github.com/MSkauen" title="Github" target="_blank" rel="noopener noreferrer">
                             <button className="btn">
@@ -51,7 +52,16 @@ export default function Hero () {
                     offset={0}
                     duration={700}
                 >
-                    <img className="down-arrow" src={leftArrow}/>
+                    <div className="mouse_scroll down-arrow">
+                        <div className="mouse">
+                            <div className="wheel"></div>
+                        </div>
+                        <div>
+                            <span className="m_scroll_arrows unu"></span>
+                            <span className="m_scroll_arrows doi"></span>
+                            <span className="m_scroll_arrows trei"></span>
+                        </div>
+                    </div>
                 </Link>
             </div>
         </div>
