@@ -22,17 +22,20 @@ export default function Landing () {
         <div className="App">
             <ParallaxProvider>
                 <NavBar/>
-                {/*
-                Use this already made parallax effect instead of my custom Background.jsx parallax component
-
-                <Parallax speed={-50} className="parallax-element">
-                    <img src={cloud_1} alt=""/>
-                </Parallax>*/}
-                    <Hero/>
-                    <Skills/>
-                    <Projects/>
-                    <Contact/>
-                    <Footer/>
+                    <Parallax translateY={[0, 100]} className="parallax-element">
+                        <img src={cloud_1} alt=""/>
+                    </Parallax>
+                <Hero/>
+                <Skills/>
+                    <Parallax translateY={[-20, 10]} className="parallax-element-2">
+                        <img src={cloud_2} alt=""/>
+                    </Parallax>
+                <Projects/>
+                <Contact/>
+                    <Parallax speed={-50} className="parallax-element-3">
+                        <img src={cloud_3} alt=""/>
+                    </Parallax>
+                <Footer/>
             </ParallaxProvider>
         </div>
     );

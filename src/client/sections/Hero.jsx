@@ -18,7 +18,7 @@ export default function Hero () {
                 </div>
                 <div>
                     <h3>Frontend / Backend Developer</h3>
-                    <div className="row call-to-action">
+                    <div className="row call-to-action-hero">
 
                         <a href="https://github.com/MSkauen" title="Github" target="_blank" rel="noopener noreferrer">
                             <button className="btn">
