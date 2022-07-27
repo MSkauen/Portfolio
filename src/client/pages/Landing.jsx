@@ -1,11 +1,10 @@
-import React from "react";
+import React, {useEffect, useRef} from "react";
 import "../../shared/css/App.css";
 import "../../shared/css/ScrollDown.css";
 import "../../shared/css/FadeInSection.css";
 import cloud_1 from "url:../../shared/img/background/cloud_1.webp";
 import cloud_2 from "url:../../shared/img/background/cloud_2.webp";
 import cloud_3 from "url:../../shared/img/background/cloud_3.webp";
-import Background from "../lib/Background.jsx";
 import NavBar from "../components/Navbar";
 import Hero from "../sections/Hero";
 import Projects from "../sections/Projects";
@@ -14,9 +13,14 @@ import Contact from "../sections/Contact";
 import Footer from "../sections/Footer";
 import {useMediaQuery} from "@mui/material";
 import {Parallax, ParallaxProvider} from "react-scroll-parallax";
+import {pageInfo} from "../lib/toasts";
 
 export default function Landing () {
     const isMobile = useMediaQuery('(max-width:960px)');
+    const toastId = useRef(null);
+    useEffect(() => {
+        pageInfo(toastId);
+    }, [])
 
     return (
         <div className="App">
